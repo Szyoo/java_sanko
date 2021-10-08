@@ -1,46 +1,47 @@
 package com.szyoo;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-
 public class draw {
     public static void main(String[] args) throws InterruptedException {
-        ioFile file = new ioFile();
-        
-        System.setProperty("webdriver.chrome.driver", "c:\\seleniumDriver/chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User Data");
-        options.addArguments("--profile-directory=Profile 6");
-        WebDriver driver = new ChromeDriver(options);
+
+        WebDriver driver = setDriver();
         driver.get("https://www.cosme.net/present");
-        Thread.sleep(3000);
 
         // List<WebElement> present_buttons =
         // driver.findElements(By.xpath("//a[contains(@href,
         // 'present/detail/present_id')]"));
-        List<WebElement> present_buttons = driver.findElements(By.cssSelector("a[href*='present/detail/present_id']"));
-        List<String> presents_link = new ArrayList<String>();
-        for (WebElement e : present_buttons) {
-            // System.out.println(e.getText().toString());
-            // System.out.println(e.getAttribute("href").toString());
-            presents_link.add(e.getAttribute("href").toString());
-        }
+        List<WebElement> presents_special = driver.findElements(By.cssSelector("a[href*='present/detail/present_id']"));
+        List<WebElement> presents_normal = driver.findElements(By.cssSelector("a[href*='/as.iy.impact-ad.jp/ct?id=']"));
+        List<Present> presents = new ArrayList<Present>();
 
-        removeDuplicate(presents_link);// 给所有链接去重
-        Map<String, Boolean> presents_used = pharseMap(presents_link);// 将链接储存为键值对
+        addElement(presents_special, presents);
+        addElement(presents_normal, presents);
 
+        // driver.get("https://www.cosme.net/brandfanclub/present");
+        // List<WebElement> presents_bfc =
+        // driver.findElements(By.className("psnt-btn"));
+
+        checkDrawBtn(presents, driver);
+        Present.showCall();
+
+        // file.saveTXT();
         driver.close();
-
-        file.saveMapTXT(presents_used);
     }
+    // <a href="/present/detail/present_id/18286" onclick="javascript:ga('send',
+    // 'event', 'present', 'index', '05_gpre_b_01');"><img
+    // src="https://cache-cdn.cosme.net/images/cnt/present/btn_apply.png"
+    // width="122" height="22" alt="応募する"></a>
+    // <a href="/present/detail/present_id/18286" onclick="javascript:ga('send',
+    // 'event', 'present', 'index', '05_gpre_01');">【Ｗチャンスあり！】スパークルカラーコレクション
+    // ムーンリバー</a>
     // <a href="/present/detail/present_id/18286" onclick="javascript:ga('send',
     // 'event', 'present', 'index', '05_gpre_b_01');"><img
     // src="https://cache-cdn.cosme.net/images/cnt/present/btn_apply.png"
@@ -51,25 +52,71 @@ public class draw {
     // width="122" height="22" alt="応募する"></a>
     // *[@id="list-member"]/ul[1]/li[1]/dl/dd/p[2]/a
 
-    private static void removeDuplicate(List<String> list) {
-        List<String> result = new ArrayList<String>();
-        for (String s : list) {
-            if (!result.contains(s)) {
-                result.add(s);
+    public static void addElement(List<WebElement> list, List<Present> des) {
+        for (WebElement e : list) {
+            String text = e.getText().toString();
+            if (!text.replaceAll(" ", "").equals("")) {
+                des.add(new Present(e.getAttribute("href").toString(), text, false, new Date()));
             }
         }
-        list.clear();
-        list.addAll(result);
     }
 
-    private static Map<String, Boolean> pharseMap(List<String> list) {
-        Map<String, Boolean> map = new HashMap<String, Boolean>();
-        for (String s : list) {
-            map.put(s, false);
+    public static WebDriver setDriver() {
+        System.setProperty("webdriver.chrome.driver", "chromedriver_94.exe");
+        ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
+        // Data");
+        // options.addArguments("--profile-directory=Profile 6");
+        options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
+        options.addArguments("--profile-directory=Default");
+        return new ChromeDriver(options);
+    }
+
+    public static void findBtn(String className) {
+        
+    }
+    public static void checkDrawBtn(List<Present> list, WebDriver driver) {
+        int sucess = 0;
+        int fail = 0;
+        int newV = 0;
+        int oldV = 0;
+        int wchance = 0;
+        int drew = 0;
+
+        for (Present p : list) {
+            driver.get(p.getLink());// 进入对应奖品的介绍界面
+            try {
+                driver.findElement(By.className("bt-article-link"));// 查找旧版PC入口链接
+                System.out.println("OldVersion Gotcha!");
+                oldV++;
+                sucess++;
+            } catch (Exception e) {
+                try {
+                    driver.findElement(By.className("gatrack"));// 查找新版图片按钮
+                    System.out.println("NewVersion Gotcha!");
+                    newV++;
+                    sucess++;
+                } catch (Exception e1) {
+                    try {
+                        driver.findElement(By.className("btn-green"));// 查找Wchance募集按钮
+                        System.out.println("WChance Gotcha!");
+                        wchance++;
+                        sucess++;
+                    } catch (Exception e2) {
+                        try {
+                            driver.findElement(By.className("apply-after"));// 查找已募集按钮
+                            System.out.println("WChance Gotcha!");
+                            drew++;
+                        } catch (Exception e3) {
+                            System.out.println(p.toString() + "\nDraw Link not Found!");
+                            fail++;
+                        }
+                    }
+                }
+            }
         }
-        return map;
+        System.out.println("Result [fail=" + fail + ", sucess=" + sucess + ", old=" + oldV + ", new=" + newV
+                + ", wchance=" + wchance + ", drew=" + drew + ", total:" + (sucess + fail + drew) + "]");
     }
-
-    
 
 }

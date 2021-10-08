@@ -15,9 +15,8 @@ public class ioFile {
     public void saveMapTXT(Map<String, Boolean> map) {
         OutputStreamWriter osw = null;
         FileOutputStream fileName;
-        
 
-        try {       
+        try {
             fileName = new FileOutputStream(path);
             osw = new OutputStreamWriter(fileName);
             String s = "";
@@ -34,7 +33,7 @@ public class ioFile {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            
+
         }
     }
 
@@ -43,10 +42,10 @@ public class ioFile {
 
         try {
             FileInputStream fis = new FileInputStream(file);
-            int n=0;
-            byte[] b=new byte[fis.available()];//新建一个字节数组
-            while (n!=-1) {
-                n=fis.read(b);
+            int n = 0;
+            byte[] b = new byte[fis.available()];// 新建一个字节数组
+            while (n != -1) {
+                n = fis.read(b);
             }
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
@@ -55,7 +54,7 @@ public class ioFile {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+
         Map<String, Boolean> map = new HashMap<String, Boolean>();
         return map;
     }
