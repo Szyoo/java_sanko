@@ -1,0 +1,95 @@
+十月 19, 2021 3:06:41 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: W3C
+文件读取成功
+未找到募集按钮！跳过当前奖品: Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=344022, name=アスタリフト, scanDate=Tue Oct 19 15:06:47 JST 2021]   
+完成，是否继续下一个抽奖？ y/n
+y
+完成，是否继续下一个抽奖？ y/n
+y
+完成，是否继续下一个抽奖？ y/n
+y
+完成，是否继续下一个抽奖？ y/n
+y
+存在多个奖品可选择，请输入对应编号选择
+No.1 :01 ブラック
+No.2 :02 ブラウン
+2
+完成，是否继续下一个抽奖？ y/n
+y
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18318","name":"【Ｗチャンスあり！】メークア
+ップ コレクション 2021","scanDate":1634623605688,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18308","name":"【Ｗチャンスあり！】スパーク
+ルカラーコレクション グリーミーポンド","scanDate":1634623605766,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18300","name":"【Ｗチャンスあり！】アロマテ
+ィック スノースケイプ","scanDate":1634623605824,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18310","name":"【Ｗチャンスあり！】フルーテ
+ィフィグスノーシアハグ＆キス","scanDate":1634623605885,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18301","name":"【Ｗチャンスあり！】ロイヤル
+グロス シャインリッププランパー","scanDate":1634623605935,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18302","name":"【Ｗチャンスあり！】タイトニ
+ングミスト","scanDate":1634623605987,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18306","name":"【Ｗチャンスあり！】ベストク
+レンズ＋グロー","scanDate":1634623606039,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18307","name":"【Ｗチャンスあり！】ファンデ
+ーション ホリデー キット 2021 オリジナル","scanDate":1634623606096,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18298","name":"【Ｗチャンスあり！】シルキー
+リキッドアイライナーWP","scanDate":1634623606150,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18299","name":"【Ｗチャンスあり！】薬用 HOT TAB RECOVERY","scanDate":1634623606217,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18304","name":"【Ｗチャンスあり！】カルテHD モイスチュア ハンドクリーム","scanDate":1634623606269,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18295","name":"【Ｗチャンスあり！】肌潤モイ
+スチャーインWクレンズ","scanDate":1634623606324,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18305","name":"【Ｗチャンスあり！】トリート
+メント ボディウォッシュ","scanDate":1634623606375,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18303","name":"【Ｗチャンスあり！】ハイドレ
+ーティング ローション [モイスチャー]","scanDate":1634623606427,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18317","name":"【Ｗチャンスあり！】リサージ
+ メン スキンメインテナイザー ゼロ・I","scanDate":1634623606488,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://www.cosme.net/brandcollection/present/detail/present_id/7145","name":"プリマヴィス 
+タ","scanDate":1634623606546,"drawDate":null,"drew":true} 
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349108","name":"エージーデオ24","scanDate":1634623606605,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345562","name":"SK-II","scanDate":1634623606656,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348307","name":"デジャヴュ","scanDate":1634623606706,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341771","name":"ドクターシーラボ","scanDate":1634623606762,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=346942","name":"クレオディーテ","scanDate":1634623606825,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349742","name":"この秋大注目の韓国コスメを厳選！ 合計300名
+様にプレゼント","scanDate":1634623606886,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348279","name":"パーフェクトワン","scanDate":1634623606938,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341633","name":"ヴァセリン","scanDate":1634623606987,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344400","name":"共感で選ぶ、心にシンクロするコスメをプレゼ
+ント♪ 合計300名様","scanDate":1634623607036,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347911","name":"エッセンシャル","scanDate":1634623607083,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350014","name":"ヘレナ ルビンスタイン","scanDate":1634623607132,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344177","name":"ビオレ","scanDate":1634623607185,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350077","name":"エリクシール","scanDate":1634623607236,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345610","name":"クラランス","scanDate":1634623607284,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347438","name":"トム フォード ビューティ","scanDate":1634623607331,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344022","name":"アスタリフト","scanDate":1634623607381,"drawDate":null,"drew":false}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349526","name":"肌美精","scanDate":1634623607432,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345648","name":"mixim（ミクシム）","scanDate":1634623607487,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345873","name":"デジャヴュ","scanDate":1634623607540,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=342727","name":"hadakara","scanDate":1634623607601,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=334347","name":"ランコム","scanDate":1634623607670,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=340759","name":"コスメデコルテ","scanDate":1634623607729,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347513","name":"トム フォード ビューティ","scanDate":1634623607787,"drawDate":1634623953461,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348215","name":"パーフェクトワン","scanDate":1634623607838,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349017","name":"アネッサ","scanDate":1634623607902,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348951","name":"パーフェクトワン","scanDate":1634623607958,"drawDate":1634624152849,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=343449","name":"ベスコス受賞ヘアケアと共同開発特集！","scanDate":1634623608011,"drawDate":1634624197603,"drew":true}Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347167","name":"ニベア","scanDate":1634623608065,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350210","name":"ohora","scanDate":1634623608117,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345735","name":"TWOOL","scanDate":1634623608177,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350834","name":"ポール ＆ ジョー ボーテ","scanDate":1634623608236,"drawDate":1634624246125,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350916","name":"ヒロインメイク","scanDate":1634623608287,"drawDate":1634624362262,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348862","name":"肌ラボ","scanDate":1634623608342,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=346331","name":"トワニー","scanDate":1634623608393,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349896","name":"&honey（アンドハニー）","scanDate":1634623608446,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=336347","name":"アベンヌ","scanDate":1634623608500,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341861","name":"SENKA(専科)","scanDate":1634623608556,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=342975","name":"SK-II","scanDate":1634623608606,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345495","name":"HAKU","scanDate":1634623608674,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347205","name":"d プログラム","scanDate":1634623608783,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347610","name":"クリアクリーン","scanDate":1634623608861,"drawDate":null,"drew":true}
+Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344848","name":"＆be(アンドビー)","scanDate":1634623608928,"drawDate":null,"drew":true}
+文件写入成功
+本次抽奖流程完成
+总计抽取奖品: 42 次
+PS D:\Documents\GitHub\java_sanko\draw_presents_cosme> 
