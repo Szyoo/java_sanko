@@ -65,12 +65,14 @@ public class Draw {
             try {
                 // 尝试在找到募集按钮的情况下点击
                 Find.findDrawBtn(driver).click();
+                Thread.sleep(2000);
                 continue;
             } catch (Exception e) {
             }
             try {
                 // 尝试在找到确认个人信息按钮的情况下点击
                 Find.findToFillBtn(driver).click();
+                Thread.sleep(4000);
                 continue;
             } catch (Exception e) {
             }
@@ -82,7 +84,7 @@ public class Draw {
                 // 找到填表界面内的送信按钮时返回true
                 return true;
             }
-        } while (++failCount > 3);
+        } while (++failCount < 5);
         System.out.println("奖品状态无法确认，尝试跳过！\n当前奖品信息：" + present.toString());
         return false;
     }

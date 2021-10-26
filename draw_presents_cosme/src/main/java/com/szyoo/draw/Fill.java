@@ -127,8 +127,8 @@ public class Fill {
         keyword.add("肌がしっとりする");
         keyword.add("顔や体に「日焼け止め」を使用");
         keyword.add("標準色");
-        keyword.add("1回程度");
-        keyword.add("1回程度");
+        keyword.add("化粧のりがよい");
+        keyword.add("くずれにくい");
         List<WebElement> list = driver.findElements(By.cssSelector("td>span>label"));
         for (WebElement label : list) {
             for (String key : keyword) {

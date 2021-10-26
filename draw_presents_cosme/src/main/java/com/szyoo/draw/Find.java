@@ -68,11 +68,11 @@ public class Find {
         xpaths.add("//a[contains(.,'こちら') and contains(@rel,'nofollow')]");
         xpaths.add("//p[contains(text(),'すぐ応募')]");
         xpaths.add("//p[contains(.,'応募する')]");
+        xpaths.add("//p[@class='apply']/input[@value='応募する']"); // WChance的绿色募集按钮
         xpaths.add("//a[contains(.,'すぐ応募')]");
         xpaths.add("//*[contains(@class,'article-item box-image banner')]/a");
         xpaths.add("//a[contains(.,'PCから応募')]");
-        xpaths.add(
-                "//img[src=https://cache-cdn.cosme.net/media/tieup_images/outside_contents_images/5941/6588/037_123_original_pc_bt4.png]");
+        xpaths.add("//img[contains(@src,'037_123_original_pc_bt4.png')]");
         xpaths.add("//span[contains(text(),'応募する')]");
 
         WebElement btn = null;
@@ -95,11 +95,8 @@ public class Find {
     public static WebElement findToFillBtn(WebDriver driver) {
         List<String> xpaths = new ArrayList<String>();
         xpaths.add("//input[@value='次へ進む']");
-        xpaths.add("");
-        xpaths.add("");
-        xpaths.add("");
-        xpaths.add("");
-        xpaths.add("");
+        xpaths.add("//p[@class='present-apl-btn']/input[@value='応募する']");
+        // xpaths.add("");
 
         WebElement btn;
         for (String xpath : xpaths) {
@@ -122,9 +119,7 @@ public class Find {
         xpaths.add("//*[contains(text(),'応募済み')]");
         xpaths.add("//*[contains(text(),'すでに回答済')]");
         xpaths.add("//*[@class='apply-after']");
-        xpaths.add("");
-        xpaths.add("");
-        xpaths.add("");
+        // xpaths.add("");
 
         WebElement btn = null;
         for (String xpath : xpaths) {
