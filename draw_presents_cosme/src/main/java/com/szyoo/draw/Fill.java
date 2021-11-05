@@ -38,10 +38,11 @@ public class Fill {
     private static Boolean checkSend(WebDriver driver) {
         if (Find.findDrew(driver)) {
             return true;
-        } else if (Find.findSendBtn(driver)) {
+        } else if (!Find.findSendBtn(driver)) {
             try {
-                driver.findElement(By.cssSelector("input[alt=送信]")).click();
-            } catch (Exception e) {
+                    Find.findDrawBtn(driver); //回到了最初品牌界面说明已经抽完
+                    return true;
+                } catch (Exception e1) {
             }
         }
         return false;
@@ -197,8 +198,13 @@ public class Fill {
             Select select = new Select(driver.findElement(By.cssSelector("select[name=prof_010_job1]")));
             select.selectByVisibleText("自営業/自由業");
         } catch (Exception e) {
-            System.out.println("查找职业输入框失败");
-            return false;
+            try {
+                Select select = new Select(driver.findElement(By.cssSelector("select[name=prof_010_job1]")));
+                select.selectByVisibleText("自営業・自由業");
+            } catch (Exception e1) {
+                System.out.println("查找职业输入框失败");
+                return false;
+            }
         }
         return true;
     }

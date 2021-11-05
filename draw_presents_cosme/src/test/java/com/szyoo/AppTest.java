@@ -1,7 +1,6 @@
 package com.szyoo;
 
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
@@ -22,7 +21,7 @@ class AppTest {
     @Test
     void testApp() throws IOException {
         WebDriver driver = Driver.setDriver();
-        String link = "https://as.iy.impact-ad.jp/ct?id=344022";
+        String link = "https://as.iy.impact-ad.jp/ct?id=350513";
 
         driver.get(link);
         Driver.closeOtherWindow(driver);

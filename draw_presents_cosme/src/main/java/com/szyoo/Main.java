@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         WebDriver driver = Driver.setDriver();
 
-        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<\n| Welcome to Take a Shot |\n>>>>>>>> (￣ω￣= >>>>>>>>>");
+        System.out.println("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<\n| Welcome to Take a Shot |\n>>>>>>>> (￣ω￣= >>>>>>>>>\n");
 
         List<Present> presents = JsonConverter.updateList(Find.searchPresentToList(driver));
 

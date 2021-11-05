@@ -56,11 +56,17 @@ public class Draw {
     public static boolean gotoFill(WebDriver driver, Present present) {
         int failCount = 0;
         do {
-            // 四次循环内始终保证当前处于正确窗口
+            // 十次循环内始终保证当前处于正确窗口
             Driver.switchNextWindow(driver);
             if (driver.getTitle().contains("ログイン／メンバー登録")) {
                 // 如果需要登录则进行登录流程
                 Login.login(driver);
+            }else{
+                try {
+                    Find.findByXpath(driver, "//a[contains(text(),'ログイン')]").click();
+                    Login.login(driver);
+                } catch (Exception e) {
+                }
             }
             try {
                 // 尝试在找到募集按钮的情况下点击
@@ -73,7 +79,6 @@ public class Draw {
                 // 尝试在找到确认个人信息按钮的情况下点击
                 Find.findToFillBtn(driver).click();
                 Thread.sleep(4000);
-                continue;
             } catch (Exception e) {
             }
             if (Find.findDrew(driver)) {
@@ -84,7 +89,12 @@ public class Draw {
                 // 找到填表界面内的送信按钮时返回true
                 return true;
             }
-        } while (++failCount < 5);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } while (++failCount < 10);
         System.out.println("奖品状态无法确认，尝试跳过！\n当前奖品信息：" + present.toString());
         return false;
     }

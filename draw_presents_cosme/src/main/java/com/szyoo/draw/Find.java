@@ -45,7 +45,7 @@ public class Find {
      * 
      * @param xpath路径
      */
-    private static WebElement findByXpath(WebDriver driver, String xpath) {
+    public static WebElement findByXpath(WebDriver driver, String xpath) {
         WebElement btn = null;
         try {
             btn = driver.findElement(By.xpath(xpath));
@@ -138,7 +138,7 @@ public class Find {
      * @return 找到了返回true，未找到则返回false
      */
     public static Boolean findSendBtn(WebDriver driver) {
-        String xpath = "//input[@alt='送信']";
+        String xpath = "//input[@alt='送信' and contains(@src,'def_pc_1')]";
         WebElement btn = findByXpath(driver, xpath);
         if (btn != null) {
             return true;

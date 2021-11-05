@@ -18,12 +18,11 @@ public class Driver {
 
             ChromeOptions options = new ChromeOptions();
 
-            // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
-            // Data");
-            // options.addArguments("--profile-directory=Profile 6");
+            options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User Data");
+            options.addArguments("--profile-directory=Profile 6");
 
-            options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
-            options.addArguments("--profile-directory=Default");
+            // options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
+            // options.addArguments("--profile-directory=Default");
 
             return new ChromeDriver(options);
         } catch (Exception e) {

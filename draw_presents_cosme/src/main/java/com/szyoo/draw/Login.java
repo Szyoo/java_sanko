@@ -11,13 +11,28 @@ public class Login {
      * @return boolean 完成后返回true
      */
     public static boolean login(WebDriver driver) {
-        try {
-            driver.findElement(By.className("em-placeholder")).sendKeys("losiner.y@gmail.com");
-            driver.findElement(By.className("input-password em-placeholder js-password")).sendKeys("ysz960411");
-            driver.findElement(By.className("button-submit")).click();
-            return true;
-        } catch (Exception e) {
-            return false;
+        int successCount = 0;
+        for (int i = 0; i < 5; i++) {
+            try {
+                driver.findElement(By.className("em-placeholder")).sendKeys("losiner.y@gmail.com");
+                successCount++;
+            } catch (Exception e) {
+            }
+            try {
+                driver.findElement(By.xpath("//input[@type='password']")).sendKeys("ysz960411");
+                successCount++;
+            } catch (Exception e) {
+            }
+            try {
+                driver.findElement(By.xpath("//input[@class='button-submit']")).click();
+                if (++successCount >= 2) {
+                    return true;
+                } else {
+                    successCount = 0;
+                }
+            } catch (Exception e) {
+            }
         }
+        return false;
     }
 }
