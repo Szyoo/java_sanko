@@ -1,6 +1,7 @@
 package com.szyoo.draw;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -13,6 +14,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class Fill {
+    private static List<String> keywords = Arrays.asList("クレンジング料", "化粧水", "乳液", "クリーム", "アイクリーム・ジェル", "デパート・百貨店",
+            "化粧品専門店", "ドラッグストア", "乾燥肌", "ウォーター・ミスト", "ボディクリーム", "保湿", "乾燥を防ぐ", "興味がある", "うるおい", "低刺激", "とても満足",
+            "使用したことはない", "を与える", "透明感", "嬉しい", "わからない", "00円以上", "応募にあたり、選択したブランドを「お気に入り登録」します", "非常に傷んでいる", "シャンプー",
+            "洗い流すトリートメント（ポンプタイプ）", "リンス・コンディショナー", "仕上がり", "気になることがある", "アイブロウ", "アイライナー", "アイシャドウ", "チーク", "口紅",
+            "長さが出る", "ボリューム", "自然", "セミロング", "香りが好き", "乾燥", "ニキビ", "しっかり落としたい", "新しい商品はすぐに試してみたい", "試すのが好きだ",
+            "信頼できるメーカーやブランド", "ダメージをケアする", "洗い流すトリートメント", "美容成分配合である", "魅力的だ", "ペンシルタイプ", "リキッドタイプ", "細くも太くも描ける",
+            "描きやすい", "ボディソープ（泡で出てくるタイプ）", "手洗い", "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度",
+            "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない", "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用",
+            "標準色", "化粧のりがよい", "くずれにくい", "週に", "大切だと思う", "歯ブラシ", "上記を確認の上、応募する","うるおう","全てのブランドをお気に入り登録して応募
+            ");
+
     /**
      * 填表完成后调用，点击送信按钮并判断处理送信结果
      * 
@@ -40,9 +52,9 @@ public class Fill {
             return true;
         } else if (!Find.findSendBtn(driver)) {
             try {
-                    Find.findDrawBtn(driver); //回到了最初品牌界面说明已经抽完
-                    return true;
-                } catch (Exception e1) {
+                Find.findDrawBtn(driver); // 回到了最初品牌界面说明已经抽完
+                return true;
+            } catch (Exception e1) {
             }
         }
         return false;
@@ -55,90 +67,19 @@ public class Fill {
      * @return boolean 完成后返回true
      */
     public static boolean fillQuestion(WebDriver driver) {
-        List<String> keyword = new ArrayList<String>();
-        keyword.add("クレンジング料");
-        keyword.add("化粧水");
-        keyword.add("乳液");
-        keyword.add("クリーム");
-        keyword.add("アイクリーム・ジェル");
-        keyword.add("デパート・百貨店");
-        keyword.add("化粧品専門店");
-        keyword.add("ドラッグストア");
-        keyword.add("乾燥肌");
-        keyword.add("ウォーター・ミスト");
-        keyword.add("ボディクリーム");
-        keyword.add("保湿");
-        keyword.add("乾燥を防ぐ");
-        keyword.add("興味がある");
-        keyword.add("うるおい");
-        keyword.add("低刺激");
-        keyword.add("とても満足");
-        keyword.add("使用したことはない");
-        keyword.add("を与える");
-        keyword.add("透明感");
-        keyword.add("嬉しい");
-        keyword.add("わからない");
-        keyword.add("00円以上");
-        keyword.add("応募にあたり、選択したブランドを「お気に入り登録」します");
-        keyword.add("非常に傷んでいる");
-        keyword.add("シャンプー");
-        keyword.add("洗い流すトリートメント（ポンプタイプ）");
-        keyword.add("リンス・コンディショナー");
-        keyword.add("仕上がり");
-        keyword.add("気になることがある");
-        keyword.add("アイブロウ");
-        keyword.add("アイライナー");
-        keyword.add("アイシャドウ");
-        keyword.add("チーク");
-        keyword.add("口紅");
-        keyword.add("長さが出る");
-        keyword.add("ボリューム");
-        keyword.add("自然");
-        keyword.add("セミロング");
-        keyword.add("香りが好き");
-        keyword.add("乾燥");
-        keyword.add("ニキビ");
-        keyword.add("しっかり落としたい");
-        keyword.add("新しい商品はすぐに試してみたい");
-        keyword.add("試すのが好きだ");
-        keyword.add("信頼できるメーカーやブランド");
-        keyword.add("ダメージをケアする");
-        keyword.add("洗い流すトリートメント");
-        keyword.add("美容成分配合である");
-        keyword.add("美容液成分であるヘアケアアイテムは魅力的だ");
-        keyword.add("ペンシルタイプ");
-        keyword.add("リキッドタイプ");
-        keyword.add("細くも太くも描ける");
-        keyword.add("描きやすい");
-        keyword.add("ボディソープ（泡で出てくるタイプ）");
-        keyword.add("手洗い");
-        keyword.add("スポンジ");
-        keyword.add("水や汗に強い");
-        keyword.add("白くならない");
-        keyword.add("日焼けしない");
-        keyword.add("肌に負担のない");
-        keyword.add("肌に優しい");
-        keyword.add("1回程度");
-        keyword.add("ネイルカラー");
-        keyword.add("やや敏感");
-        keyword.add("施術を受けたことはないし、興味もない");
-        keyword.add("ときどきある");
-        keyword.add("冷たいものがしみる");
-        keyword.add("ムシ歯になりやすい");
-        keyword.add("肌がしっとりする");
-        keyword.add("顔や体に「日焼け止め」を使用");
-        keyword.add("標準色");
-        keyword.add("化粧のりがよい");
-        keyword.add("くずれにくい");
         List<WebElement> list = driver.findElements(By.cssSelector("td>span>label"));
         for (WebElement label : list) {
-            for (String key : keyword) {
+            for (String key : keywords) {
                 // 若Label中存在指定关键词则点击其下属的input
                 if (label.getText().contains(key)) {
-                    label.findElement(By.cssSelector("input")).click();
+                    try {
+                        label.findElement(By.cssSelector("input")).click();
+                    } catch (Exception e) {
+                        System.out.println(label.getText() + " 点击失败");
+                    }
                 }
             }
-        } // *[contains(@class,'article-item box-image banner')]/a
+        }
         try {
             driver.findElement(By.xpath("//label[contains(.,'使用したことはないが、興味はある')]")).findElement(By.cssSelector("input"))
                     .click();

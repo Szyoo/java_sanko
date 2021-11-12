@@ -1,6 +1,7 @@
 package com.szyoo.draw;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.szyoo.Driver;
@@ -11,6 +12,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Find {
+    private static List<String> xpath_draw = Arrays.asList("btn-green",
+            "//a[contains(.,'こちら') and contains(@rel,'nofollow')]", "//p[contains(text(),'すぐ応募')]",
+            "//p[contains(.,'応募する')]", "//p[contains(.,'応募する')]", "//a[contains(.,'すぐ応募')]",
+            "//*[contains(@class,'article-item box-image banner')]/a/img[contains(@src,'bt4.png')]", "//a[contains(.,'PCから応募')]",
+            "//img[contains(@src,'037_123_original_pc_bt4.png')]", "//span[contains(text(),'応募する')]");
+    private static List<String> xpath_drew = Arrays.asList("//*[contains(text(),'応募済み')]",
+            "//*[contains(text(),'すでに回答済')]", "//*[contains(.,'すでに回答済')]", "//*[@class='apply-after']");
+
+    private static List<String> xpath_toFill = Arrays.asList("//input[@value='次へ進む']",
+            "//p[@class='present-apl-btn']/input[@value='応募する']");
+
     /**
      * 在已打开页面上查找所有可用奖品信息，并将[链接，文本，当前时间]汇总为Present的List
      * 
@@ -63,20 +75,8 @@ public class Find {
      * 
      */
     public static WebElement findDrawBtn(WebDriver driver) {
-        List<String> xpaths = new ArrayList<String>();
-        xpaths.add("btn-green");
-        xpaths.add("//a[contains(.,'こちら') and contains(@rel,'nofollow')]");
-        xpaths.add("//p[contains(text(),'すぐ応募')]");
-        xpaths.add("//p[contains(.,'応募する')]");
-        xpaths.add("//p[@class='apply']/input[@value='応募する']"); // WChance的绿色募集按钮
-        xpaths.add("//a[contains(.,'すぐ応募')]");
-        xpaths.add("//*[contains(@class,'article-item box-image banner')]/a");
-        xpaths.add("//a[contains(.,'PCから応募')]");
-        xpaths.add("//img[contains(@src,'037_123_original_pc_bt4.png')]");
-        xpaths.add("//span[contains(text(),'応募する')]");
-
         WebElement btn = null;
-        for (String xpath : xpaths) {
+        for (String xpath : xpath_draw) {
             btn = findByXpath(driver, xpath);
             if (btn != null) {
                 return btn;
@@ -93,13 +93,8 @@ public class Find {
      * 
      */
     public static WebElement findToFillBtn(WebDriver driver) {
-        List<String> xpaths = new ArrayList<String>();
-        xpaths.add("//input[@value='次へ進む']");
-        xpaths.add("//p[@class='present-apl-btn']/input[@value='応募する']");
-        // xpaths.add("");
-
         WebElement btn;
-        for (String xpath : xpaths) {
+        for (String xpath : xpath_toFill) {
             btn = findByXpath(driver, xpath);
             if (btn != null) {
                 return btn;
@@ -115,14 +110,8 @@ public class Find {
      * @return 找到了返回true，未找到则返回false
      */
     public static Boolean findDrew(WebDriver driver) {
-        List<String> xpaths = new ArrayList<String>();
-        xpaths.add("//*[contains(text(),'応募済み')]");
-        xpaths.add("//*[contains(text(),'すでに回答済')]");
-        xpaths.add("//*[@class='apply-after']");
-        // xpaths.add("");
-
         WebElement btn = null;
-        for (String xpath : xpaths) {
+        for (String xpath : xpath_drew) {
             btn = findByXpath(driver, xpath);
             if (btn != null) {
                 return true;

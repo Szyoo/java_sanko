@@ -21,7 +21,7 @@ class AppTest {
     @Test
     void testApp() throws IOException {
         WebDriver driver = Driver.setDriver();
-        String link = "https://as.iy.impact-ad.jp/ct?id=350513";
+        String link = "https://as.iy.impact-ad.jp/ct?id=352832";
 
         driver.get(link);
         Driver.closeOtherWindow(driver);

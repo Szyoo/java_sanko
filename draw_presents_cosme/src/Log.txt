@@ -1,95 +1,164 @@
-十月 19, 2021 3:06:41 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+PS D:\Szyoo\java_sanko\draw_presents_cosme>  d:; cd 'd:\Szyoo\java_sanko\draw_presents_cosme'; & 'c:\Users\student\.vscode\extensions\vscjava.vscode-java-debug-0.36.0\scripts\launcher.bat' 'C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\bin\java.exe' '-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:55069' '-Dfile.encoding=UTF-8' '-cp'
+ 'C:\Users\student\AppData\Local\Temp\cp_1ef4qo09g74rt70seehmza6vg.jar' 'com.szyoo.Main'
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 49131
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1636593683.351][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+十一月 11, 2021 10:21:25 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: W3C
-文件读取成功
-未找到募集按钮！跳过当前奖品: Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=344022, name=アスタリフト, scanDate=Tue Oct 19 15:06:47 JST 2021]   
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<
+| Welcome to Take a Shot |
+>>>>>>>> (￣ω￣= >>>>>>>>>
+
+开始识别奖品...
+请稍等...
+识别完成！共识别到奖品：72 个
+历史数据文件读取成功
+数据整合成功！
+读取到的旧数据共：46 条
+整合之后的数据共：72 条
+当前进度: 1/72 开始抽取
+当前进度: 2/72 开始抽取
+当前进度: 3/72 开始抽取
+当前进度: 4/72 开始抽取
+当前进度: 5/72 开始抽取
+当前进度: 6/72 开始抽取
+当前进度: 7/72 开始抽取
+当前进度: 8/72 开始抽取
+当前进度: 9/72 开始抽取
+当前进度: 10/72 开始抽取
+当前进度: 11/72 开始抽取
+当前进度: 12/72 开始抽取
+当前进度: 13/72 开始抽取
+当前进度: 14/72 开始抽取
+当前进度: 15/72 开始抽取
+当前进度: 16/72 开始抽取
+当前进度: 17/72 开始抽取
 完成，是否继续下一个抽奖？ y/n
 y
+当前进度: 18/72 开始抽取
 完成，是否继续下一个抽奖？ y/n
 y
-完成，是否继续下一个抽奖？ y/n
-y
-完成，是否继续下一个抽奖？ y/n
-y
+当前进度: 19/72 开始抽取
 存在多个奖品可选择，请输入对应编号选择
-No.1 :01 ブラック
-No.2 :02 ブラウン
+No.1 :36 サンド（やや黄みよりの標準的な色）
+No.2 :72 アイボリー ヌード（黄みと赤みを抑えた最も明るい色）
+1
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 20/72 开始抽取
+存在多个奖品可选择，请输入对应编号选择
+No.1 :UVイデア XL プロテクショントーンアップ
+No.2 :UVイデア XL プロテクショントーンアップ ローズ
+1
+完成，是否继续下一个抽奖？ y/n
+y
+
+奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=346294, name=SK-II, scanDate=Thu Nov 11 10:21:43 JST 2021]
+当前进度: 28/72 开始抽取
+存在多个奖品可选择，请输入对应编号选择                                               No.1 :リペア薬用保湿化粧水 とてもしっとり（現品）
+No.2 :トリプルセット（サンプル）＜リペア薬用保湿化粧水 とてもしっとり、リペア薬用保湿乳液 、リペア薬用保湿クリーム＞
 2
 完成，是否继续下一个抽奖？ y/n
 y
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18318","name":"【Ｗチャンスあり！】メークア
-ップ コレクション 2021","scanDate":1634623605688,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18308","name":"【Ｗチャンスあり！】スパーク
-ルカラーコレクション グリーミーポンド","scanDate":1634623605766,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18300","name":"【Ｗチャンスあり！】アロマテ
-ィック スノースケイプ","scanDate":1634623605824,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18310","name":"【Ｗチャンスあり！】フルーテ
-ィフィグスノーシアハグ＆キス","scanDate":1634623605885,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18301","name":"【Ｗチャンスあり！】ロイヤル
-グロス シャインリッププランパー","scanDate":1634623605935,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18302","name":"【Ｗチャンスあり！】タイトニ
-ングミスト","scanDate":1634623605987,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18306","name":"【Ｗチャンスあり！】ベストク
-レンズ＋グロー","scanDate":1634623606039,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18307","name":"【Ｗチャンスあり！】ファンデ
-ーション ホリデー キット 2021 オリジナル","scanDate":1634623606096,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18298","name":"【Ｗチャンスあり！】シルキー
-リキッドアイライナーWP","scanDate":1634623606150,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18299","name":"【Ｗチャンスあり！】薬用 HOT TAB RECOVERY","scanDate":1634623606217,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18304","name":"【Ｗチャンスあり！】カルテHD モイスチュア ハンドクリーム","scanDate":1634623606269,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18295","name":"【Ｗチャンスあり！】肌潤モイ
-スチャーインWクレンズ","scanDate":1634623606324,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18305","name":"【Ｗチャンスあり！】トリート
-メント ボディウォッシュ","scanDate":1634623606375,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18303","name":"【Ｗチャンスあり！】ハイドレ
-ーティング ローション [モイスチャー]","scanDate":1634623606427,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/present/detail/present_id/18317","name":"【Ｗチャンスあり！】リサージ
- メン スキンメインテナイザー ゼロ・I","scanDate":1634623606488,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://www.cosme.net/brandcollection/present/detail/present_id/7145","name":"プリマヴィス 
-タ","scanDate":1634623606546,"drawDate":null,"drew":true} 
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349108","name":"エージーデオ24","scanDate":1634623606605,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345562","name":"SK-II","scanDate":1634623606656,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348307","name":"デジャヴュ","scanDate":1634623606706,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341771","name":"ドクターシーラボ","scanDate":1634623606762,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=346942","name":"クレオディーテ","scanDate":1634623606825,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349742","name":"この秋大注目の韓国コスメを厳選！ 合計300名
-様にプレゼント","scanDate":1634623606886,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348279","name":"パーフェクトワン","scanDate":1634623606938,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341633","name":"ヴァセリン","scanDate":1634623606987,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344400","name":"共感で選ぶ、心にシンクロするコスメをプレゼ
-ント♪ 合計300名様","scanDate":1634623607036,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347911","name":"エッセンシャル","scanDate":1634623607083,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350014","name":"ヘレナ ルビンスタイン","scanDate":1634623607132,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344177","name":"ビオレ","scanDate":1634623607185,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350077","name":"エリクシール","scanDate":1634623607236,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345610","name":"クラランス","scanDate":1634623607284,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347438","name":"トム フォード ビューティ","scanDate":1634623607331,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344022","name":"アスタリフト","scanDate":1634623607381,"drawDate":null,"drew":false}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349526","name":"肌美精","scanDate":1634623607432,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345648","name":"mixim（ミクシム）","scanDate":1634623607487,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345873","name":"デジャヴュ","scanDate":1634623607540,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=342727","name":"hadakara","scanDate":1634623607601,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=334347","name":"ランコム","scanDate":1634623607670,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=340759","name":"コスメデコルテ","scanDate":1634623607729,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347513","name":"トム フォード ビューティ","scanDate":1634623607787,"drawDate":1634623953461,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348215","name":"パーフェクトワン","scanDate":1634623607838,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349017","name":"アネッサ","scanDate":1634623607902,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348951","name":"パーフェクトワン","scanDate":1634623607958,"drawDate":1634624152849,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=343449","name":"ベスコス受賞ヘアケアと共同開発特集！","scanDate":1634623608011,"drawDate":1634624197603,"drew":true}Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347167","name":"ニベア","scanDate":1634623608065,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350210","name":"ohora","scanDate":1634623608117,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345735","name":"TWOOL","scanDate":1634623608177,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350834","name":"ポール ＆ ジョー ボーテ","scanDate":1634623608236,"drawDate":1634624246125,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=350916","name":"ヒロインメイク","scanDate":1634623608287,"drawDate":1634624362262,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=348862","name":"肌ラボ","scanDate":1634623608342,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=346331","name":"トワニー","scanDate":1634623608393,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=349896","name":"&honey（アンドハニー）","scanDate":1634623608446,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=336347","name":"アベンヌ","scanDate":1634623608500,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=341861","name":"SENKA(専科)","scanDate":1634623608556,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=342975","name":"SK-II","scanDate":1634623608606,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=345495","name":"HAKU","scanDate":1634623608674,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347205","name":"d プログラム","scanDate":1634623608783,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=347610","name":"クリアクリーン","scanDate":1634623608861,"drawDate":null,"drew":true}
-Change to JSON: {"link":"https://as.iy.impact-ad.jp/ct?id=344848","name":"＆be(アンドビー)","scanDate":1634623608928,"drawDate":null,"drew":true}
-文件写入成功
-本次抽奖流程完成
-总计抽取奖品: 42 次
-PS D:\Documents\GitHub\java_sanko\draw_presents_cosme> 
+当前进度: 29/72 开始抽取
+奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=350429, name=Panasonic, scanDate=Thu Nov 11 10:21:43 JST 2021]
+当前进度: 30/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以确认继续
+ok
+当前进度: 31/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 32/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 33/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 34/72 开始抽取
+y
+y
+当前进度: 35/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 36/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 37/72 开始抽取
+奖品状态无法确认，尝试跳过！当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=351737, name=@cosme編集部注目！ 5アイテムをピックアップ, scanDate=Thu Nov 11 10:21:44 JST 2021]
+当前进度: 38/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 39/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 40/72 开始抽取
+セミロング 点击失败
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 41/72 开始抽取
+奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=352644, name=エリクシール, scanDate=Thu Nov 11 10:21:44 JST 2021]
+当前进度: 42/72 开始抽取
+奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=345416, name=マキアージュ, scanDate=Thu Nov 11 10:21:44 JST 2021]
+当前进度: 43/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 44/72 开始抽取
+存在多个奖品可选择，请输入对应编号选择
+No.1 :コラージュフルフル泡石鹸＜150ml／現品＞ と コラージュリペア薬用保湿化粧水　とてもしっとり＜サンプル／2ml×2包＞
+No.2 :コラージュフルフル泡石鹸＜50ml／サンプル＞ と コラージュリペア薬用保
+湿化粧水　とてもしっとり＜サンプル／2ml×2包＞
+1 
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 45/72 开始抽取
+セミロング 点击失败
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 46/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以
+确认继续
+ok
+当前进度: 47/72 开始抽取
+完成，是否继续下一个抽奖？ y/n
+y
+当前进度: 48/72 开始抽取
+奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=352832, name=エステダム, scanDate=Thu Nov 11 10:21:44 JST 2021]
+当前进度: 49/72 开始抽取
+Exception in thread "main" org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CATFISH-SURFACE', ip: '10.105.80.186', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_292'     
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users/student/AppData/Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c579eed304c5ec75ac89fac6189e65d8
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+        at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:472)
+        at com.szyoo.Driver.switchNextWindow(Driver.java:60)
+        at com.szyoo.draw.Draw.gotoFill(Draw.java:66)
+        at com.szyoo.draw.Draw.drawOnce(Draw.java:43)
+        at com.szyoo.draw.Draw.drawAll(Draw.java:25)
+        at com.szyoo.Main.main(Main.java:18)

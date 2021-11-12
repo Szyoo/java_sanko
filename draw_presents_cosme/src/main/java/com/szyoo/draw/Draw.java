@@ -15,12 +15,17 @@ public class Draw {
      * @param presents
      */
     public static void drawAll(WebDriver driver, List<Present> presents) {
+        int presentsSize = presents.size();
+        int count = 0;
         for (Present p : presents) {
+            System.out.print("当前进度: " + ++count + "/" + presentsSize);
             if (!p.getDrew()) { // 未过抽奖
                 driver.get(p.getLink()); // 跳转奖品介绍界面
                 if (!Draw.drawOnce(driver, p)) {
                     break;
                 }
+            } else {
+                System.out.println(" 已抽取，跳过");
             }
         }
     }
@@ -35,6 +40,7 @@ public class Draw {
     public static Boolean drawOnce(WebDriver driver, Present present) {
         // 尝试进入填表页面，若失败则跳过
         if (gotoFill(driver, present)) {
+            System.out.println(" 开始抽取");
             Fill.fillQuestion(driver);
             Fill.fillName(driver);
             if (InputController.chekcContinue()) {
@@ -42,6 +48,8 @@ public class Draw {
             } else {
                 return false;
             }
+        }else{
+            System.out.println(" 已抽取，跳过");
         }
         return true;
     }
@@ -61,7 +69,7 @@ public class Draw {
             if (driver.getTitle().contains("ログイン／メンバー登録")) {
                 // 如果需要登录则进行登录流程
                 Login.login(driver);
-            }else{
+            } else {
                 try {
                     Find.findByXpath(driver, "//a[contains(text(),'ログイン')]").click();
                     Login.login(driver);
