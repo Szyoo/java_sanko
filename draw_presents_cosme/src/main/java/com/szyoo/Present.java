@@ -93,8 +93,8 @@ public class Present {
         return drawDate;
     }
 
-    public void setDrawDate(Date drawDate) {
-        this.drawDate = drawDate;
+    public void setDrawDate() {
+        this.drawDate = new Date();
     }
 
     /**
@@ -106,22 +106,27 @@ public class Present {
      */
     public static List<Present> unionPresent(List<Present> presents_new, List<Present> presents_old) {
         List<Present> result = new ArrayList<Present>();
+        int unionCount = 0;
+        int ununionCount = 0;
         for (Present p_new : presents_new) {
             Boolean unionFlag = false;
             for (Present p_old : presents_old) {
                 if (p_old.getLink().equals(p_new.getLink())) {// 存在相同链接对象
                     result.add(p_old);// 将文件内存储的对象覆盖到当前List
                     unionFlag = true;
+                    unionCount++;
                     break;
                 }
             }
             if (!unionFlag) {// 当前新增对象不包含在文件内
                 result.add(p_new);
+                ununionCount++;
             }
         }
         System.out.println("数据整合成功！");
         System.out.println("读取到的旧数据共：" + presents_old.size() + " 条");
-        System.out.println("整合之后的数据共：" + result.size() + " 条");
+        System.out.println("整合之后的数据共：" + result.size() + " 条：");
+        System.out.println("其中包含: 旧数据沿用: " + unionCount + "条，新增数据: " + ununionCount + "条");
         return result;
     }
 

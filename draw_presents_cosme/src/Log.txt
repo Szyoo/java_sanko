@@ -1,13 +1,8 @@
-PS D:\Szyoo\java_sanko\draw_presents_cosme>  d:; cd 'd:\Szyoo\java_sanko\draw_presents_cosme'; & 'c:\Users\student\.vscode\extensions\vscjava.vscode-java-debug-0.36.0\scripts\launcher.bat' 'C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\bin\java.exe' '-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:55069' '-Dfile.encoding=UTF-8' '-cp'
- 'C:\Users\student\AppData\Local\Temp\cp_1ef4qo09g74rt70seehmza6vg.jar' 'com.szyoo.Main'
-Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 49131
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 12640
 Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safOnly local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1636593683.351][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
-十一月 11, 2021 10:21:25 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: W3C
-
+ChromeDriver was started successfully.[1636680816.192][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.十一月 12, 2021 10:33:36 上午 org.openqa.selenium.remote.ProtocolHandshake createSession信息: Detected dialect: W3C
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<
 | Welcome to Take a Shot |
@@ -20,145 +15,184 @@ ChromeDriver was started successfully.
 数据整合成功！
 读取到的旧数据共：46 条
 整合之后的数据共：72 条
-当前进度: 1/72 开始抽取
-当前进度: 2/72 开始抽取
-当前进度: 3/72 开始抽取
-当前进度: 4/72 开始抽取
-当前进度: 5/72 开始抽取
-当前进度: 6/72 开始抽取
-当前进度: 7/72 开始抽取
-当前进度: 8/72 开始抽取
-当前进度: 9/72 开始抽取
-当前进度: 10/72 开始抽取
-当前进度: 11/72 开始抽取
-当前进度: 12/72 开始抽取
-当前进度: 13/72 开始抽取
-当前进度: 14/72 开始抽取
-当前进度: 15/72 开始抽取
-当前进度: 16/72 开始抽取
-当前进度: 17/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 18/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 19/72 开始抽取
-存在多个奖品可选择，请输入对应编号选择
-No.1 :36 サンド（やや黄みよりの標準的な色）
-No.2 :72 アイボリー ヌード（黄みと赤みを抑えた最も明るい色）
-1
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 20/72 开始抽取
-存在多个奖品可选择，请输入对应编号选择
-No.1 :UVイデア XL プロテクショントーンアップ
-No.2 :UVイデア XL プロテクショントーンアップ ローズ
-1
-完成，是否继续下一个抽奖？ y/n
-y
-
-奖品状态无法确认，尝试跳过！
-当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=346294, name=SK-II, scanDate=Thu Nov 11 10:21:43 JST 2021]
-当前进度: 28/72 开始抽取
-存在多个奖品可选择，请输入对应编号选择                                               No.1 :リペア薬用保湿化粧水 とてもしっとり（現品）
-No.2 :トリプルセット（サンプル）＜リペア薬用保湿化粧水 とてもしっとり、リペア薬用保湿乳液 、リペア薬用保湿クリーム＞
-2
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 29/72 开始抽取
-奖品状态无法确认，尝试跳过！
-当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=350429, name=Panasonic, scanDate=Thu Nov 11 10:21:43 JST 2021]
-当前进度: 30/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以确认继续
-ok
-当前进度: 31/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 32/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 33/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 34/72 开始抽取
-y
-y
-当前进度: 35/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 36/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 37/72 开始抽取
-奖品状态无法确认，尝试跳过！当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=351737, name=@cosme編集部注目！ 5アイテムをピックアップ, scanDate=Thu Nov 11 10:21:44 JST 2021]
-当前进度: 38/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 39/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 40/72 开始抽取
-セミロング 点击失败
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 41/72 开始抽取
-奖品状态无法确认，尝试跳过！
-当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=352644, name=エリクシール, scanDate=Thu Nov 11 10:21:44 JST 2021]
-当前进度: 42/72 开始抽取
-奖品状态无法确认，尝试跳过！
-当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=345416, name=マキアージュ, scanDate=Thu Nov 11 10:21:44 JST 2021]
-当前进度: 43/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 44/72 开始抽取
-存在多个奖品可选择，请输入对应编号选择
-No.1 :コラージュフルフル泡石鹸＜150ml／現品＞ と コラージュリペア薬用保湿化粧水　とてもしっとり＜サンプル／2ml×2包＞
-No.2 :コラージュフルフル泡石鹸＜50ml／サンプル＞ と コラージュリペア薬用保
-湿化粧水　とてもしっとり＜サンプル／2ml×2包＞
-1 
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 45/72 开始抽取
-セミロング 点击失败
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 46/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以
-确认继续
-ok
-当前进度: 47/72 开始抽取
-完成，是否继续下一个抽奖？ y/n
-y
-当前进度: 48/72 开始抽取
-奖品状态无法确认，尝试跳过！
-当前奖品信息：Present [drawDate=null, isDrew=false, link=https://as.iy.impact-ad.jp/ct?id=352832, name=エステダム, scanDate=Thu Nov 11 10:21:44 JST 2021]
-当前进度: 49/72 开始抽取
-Exception in thread "main" org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=95.0.4638.69)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CATFISH-SURFACE', ip: '10.105.80.186', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_292'     
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users/student/AppData/Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c579eed304c5ec75ac89fac6189e65d8
-        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-        at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-        at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:472)
-        at com.szyoo.Driver.switchNextWindow(Driver.java:60)
-        at com.szyoo.draw.Draw.gotoFill(Draw.java:66)
-        at com.szyoo.draw.Draw.drawOnce(Draw.java:43)
-        at com.szyoo.draw.Draw.drawAll(Draw.java:25)
-        at com.szyoo.Main.main(Main.java:18)
+当前进度: 1/72 已抽取，跳过
+当前进度: 2/72 已抽取，跳过
+当前进度: 3/72 已抽取，跳过
+当前进度: 4/72 已抽取，跳过
+当前进度: 5/72 已抽取，跳过
+当前进度: 6/72 已抽取，跳过
+当前进度: 7/72 已抽取，跳过
+当前进度: 8/72 已抽取，跳过
+当前进度: 9/72 已抽取，跳过
+当前进度: 10/72 已抽取，跳过
+当前进度: 11/72 已抽取，跳过
+当前进度: 12/72 已抽取，跳过
+当前进度: 13/72 已抽取，跳过
+当前进度: 14/72 已抽取，跳过
+当前进度: 15/72 已抽取，跳过
+当前进度: 16/72 已抽取，跳过
+当前进度: 17/72 已抽取，跳过
+当前进度: 18/72 已抽取，跳过
+当前进度: 19/72 已抽取，跳过
+当前进度: 20/72 已抽取，跳过
+当前进度: 21/72 已抽取，跳过
+当前进度: 22/72 已抽取，跳过
+当前进度: 23/72 已抽取，跳过
+当前进度: 24/72 已抽取，跳过
+当前进度: 25/72 已抽取，跳过
+当前进度: 26/72 已抽取，跳过
+当前进度: 27/72 已抽取，跳过
+当前进度: 28/72 已抽取，跳过
+当前进度: 29/72 已抽取，跳过
+当前进度: 30/72 已抽取，跳过
+当前进度: 31/72 已抽取，跳过
+当前进度: 32/72 已抽取，跳过
+当前进度: 33/72 已抽取，跳过
+当前进度: 34/72 已抽取，跳过
+当前进度: 35/72 已抽取，跳过
+当前进度: 36/72 已抽取，跳过
+当前进度: 37/72 已抽取，跳过
+当前进度: 38/72 已抽取，跳过
+当前进度: 39/72 已抽取，跳过
+当前进度: 40/72 已抽取，跳过
+当前进度: 41/72 已抽取，跳过
+当前进度: 42/72 已抽取，跳过
+当前进度: 43/72 已抽取，跳过
+当前进度: 44/72 已抽取，跳过
+当前进度: 45/72 已抽取，跳过
+当前进度: 46/72 已抽取，跳过
+当前进度: 47/72 已抽取，跳过
+当前进度: 48/72 已抽取，跳过
+当前进度: 49/72 已抽取，跳过
+当前进度: 50/72 已抽取，跳过
+当前进度: 51/72 已抽取，跳过
+当前进度: 52/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/10842/top, name=MTメタトロン プレミアムコフレ / MTメタトロン
+計3名様現品
+今年人気の7つのアイテムを詰め込んだ限定コフレ
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 53/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/118948/top, name=noiro センティッド クリーム / noiro
+計10名様現品
+うるおいと香りをまとう至福のハンド＆ボディクリーム      
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 54/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/118759/top, name= 新商品！皮膚の専門家監修の高保湿ハンドクリーム / エクス バリア
+計20名様現品
+うるおい低刺激処方＆お子さんと一緒に使えます！
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 55/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/117194/top, name= 手を洗いながら、うるおいケアできるハンドソープ / Lala Vie (ララヴィ)
+計20名様現品
+手肌の乾燥や荒れが気になる方にオススメ♪
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 56/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/113017/top, name= ニュアンスラップティント　05無花果ブラウン / Fujiko（フ ジコ）
+計10名様現品
+とろけて、満ちて、私の唇になる。
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 57/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/22734/top, name=ホワイトニング リンクルリペア＆トライアルセット / Excellula（エクセルーラ）
+計20名様現品
+ブースター美容液～クリームまで！ライン使いで実感！      
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 58/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/22434/top, name=リファC.P.セラムリフト / ReFa
+計5名様現品
+ふっくら濃密肌へ導く！ゲノム研究から着想した美容液      
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 59/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/17868/top, name=ベルサイユのばら ザ・マスク　7枚入り2種セット / クレアボーテ
+計20名様現品
+高保湿×デイリーケアの新シートマスクが登場！
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 60/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/13/top, name=アネ ッサ　パーフェクトＵＶスキンケアミルクaミニ / アネッサ  
+計20名様現品
+秋冬のUV・乾燥対策にも『金ミルク』
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 61/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/788/top, name=大人気ファンデで叶える秋冬の素肌美 / シュウ ウエムラ        
+計20名様現品
+崩れ知らずの美しい肌へ
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 62/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/6128/top, name=ionic ビューティージェル&美白用歯ブラシ / KISS YOU (キスユ ー)
+計20名様現品
+【ヒアルロン酸配合】お口のうるおいキープで口臭対策      
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 63/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/32/top, name=10月 発売の新製品と大人気アイテムの6点セット！ / メイベリン  ニューヨーク
+計20名様現品
+新製品プライマー＆人気マスカラ・ファンデ現品
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 64/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/828/top, name=セタフィル モイスチャライジングクリーム / セタフィル        
+計20名様現品
+高保湿ヴェールで肌のバリア機能をサポート
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 65/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/11450/top, name=suisaiの酵素*洗顔パウダー＜黒＞ / suisai
+計20名様現品
+テカり・べたつきが気になる方へ！酵素*洗顔黒**
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 66/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/18316/top, name=アスタリフト サプリメント ホワイトシールド / アスタリフト 
+計15名様現品
+肌のうるおいもキープする「飲む紫外線対策*」
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 67/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/2782/top, name=贅 沢保湿のプレミアムハンドケア＋ハンドミルク / アトリック ス
+計20名様現品
+加齢による手肌の変化が気になる方におすすめのセット      
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 68/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/7638/top, name=イ ニスフリーグリーンホリデー限定品をプレゼント！ / イニス フリー
+計20名様現品
+人気導入美容液のホリデー限定スペシャルセット
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 69/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/11382/top, name=とろ～りとろける♪マヌカハニークレンジングバーム / アピセラピーコスメティクス
+計20名様現品
+気になる毛穴も乾燥も撃退！
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 70/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/17742/top, name=セグレタ　プレミアムスパフォーム / セグレタ
+計20名様現品
+大人のうねり髪に浸透導入。濃密泡のヘアケア体験♪
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 71/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/108195/top, name=CLIO 新作 アイパレット&リップバーム / CLIO
+計20名様現品
+リニューアルしたアイパレットを20名様にプレゼント        
+応募する, scanDate=Fri Nov 12 10:33:50 JST 2021]        
+ 已抽取，跳过
+当前进度: 72/72奖品状态无法确认，尝试跳过！
+当前奖品信息：Present [drawDate=null, isDrew=false, link=https://www.cosme.net/brand/brand_id/11624/top/nt, name=プライムリキッドアイライナー リッチカラー / ヒロインメ イク
+計10名様現品
+普段使いしやすいトレンド感のあるカラーライナー☆
+応募する, scanDate=Fri Nov 12 10:33:51 JST 2021]        
+ 已抽取，跳过
+本次抽奖流程完成
+总计抽取奖品: 0 次
+数据文件保存成功
+程序即将退出，祝你好运～ (￣ω￣=

@@ -57,6 +57,7 @@ public class JsonFile {
                 String temp = null;
                 while ((temp = br.readLine()) != null) {
                     sb.append(temp);
+                    sb.append("\r\n");
                 }
             } catch (IOException e) {
                 e.printStackTrace();

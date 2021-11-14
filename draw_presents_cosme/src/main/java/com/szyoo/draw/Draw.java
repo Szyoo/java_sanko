@@ -17,6 +17,7 @@ public class Draw {
     public static void drawAll(WebDriver driver, List<Present> presents) {
         int presentsSize = presents.size();
         int count = 0;
+        System.out.println("开始抽奖啦，祝你好运！~~");
         for (Present p : presents) {
             System.out.print("当前进度: " + ++count + "/" + presentsSize);
             if (!p.getDrew()) { // 未过抽奖
@@ -25,7 +26,7 @@ public class Draw {
                     break;
                 }
             } else {
-                System.out.println(" 已抽取，跳过");
+                System.out.println(" 存档记录已抽取，跳过");
             }
         }
     }
@@ -43,13 +44,11 @@ public class Draw {
             System.out.println(" 开始抽取");
             Fill.fillQuestion(driver);
             Fill.fillName(driver);
-            if (InputController.chekcContinue()) {
+            // if (InputController.chekcContinue()) {
                 Fill.send(driver, present);
-            } else {
-                return false;
-            }
-        }else{
-            System.out.println(" 已抽取，跳过");
+            // } else {
+            //     return false;
+            // }
         }
         return true;
     }
@@ -92,8 +91,9 @@ public class Draw {
             if (Find.findDrew(driver)) {
                 // 已募集的情况下终止本轮抽奖
                 present.setDrew(true);
+                System.out.println(" 检测到已抽取，记录并跳过");
                 return false;
-            } else if (Find.findSendBtn(driver)) {
+            } else if (!(Find.findSendBtn(driver)==null)) {
                 // 找到填表界面内的送信按钮时返回true
                 return true;
             }

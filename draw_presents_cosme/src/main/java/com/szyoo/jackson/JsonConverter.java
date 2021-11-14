@@ -48,7 +48,7 @@ public class JsonConverter {
     private static String listToJson(List<Present> presents) throws JsonProcessingException {
         String jsonString = "";
         for (Present p : presents) {
-            jsonString = jsonString.concat(toJSON(p)).concat("@");
+            jsonString = jsonString.concat(toJSON(p)).concat("\r\n");
         }
         return jsonString;
     }
@@ -64,8 +64,8 @@ public class JsonConverter {
     private static List<Present> listToPresents(String jsonString) {
         List<Present> presents = new ArrayList<Present>();
         try {
-            if (jsonString.contains("@")) {
-                String[] jsonStringList = jsonString.split("@");
+            if (jsonString.contains("\r\n")) {
+                String[] jsonStringList = jsonString.split("\r\n");
                 for (String s : jsonStringList) {
                     presents.add(toPresent(s));
                 }

@@ -16,12 +16,15 @@ public class Find {
             "//a[contains(.,'こちら') and contains(@rel,'nofollow')]", "//p[contains(text(),'すぐ応募')]",
             "//p[contains(.,'応募する')]", "//p[contains(.,'応募する')]", "//a[contains(.,'すぐ応募')]",
             "//*[contains(@class,'article-item box-image banner')]/a/img[contains(@src,'bt4.png')]", "//a[contains(.,'PCから応募')]",
-            "//img[contains(@src,'037_123_original_pc_bt4.png')]", "//span[contains(text(),'応募する')]");
+            "//img[contains(@src,'037_123_original_pc_bt4.png')]", "//span[contains(text(),'応募する')]","//input[@value='応募する' and @type='button']");
     private static List<String> xpath_drew = Arrays.asList("//*[contains(text(),'応募済み')]",
-            "//*[contains(text(),'すでに回答済')]", "//*[contains(.,'すでに回答済')]", "//*[@class='apply-after']");
+            "//*[contains(text(),'すでに回答済')]", "//*[contains(.,'すでに回答済')]", "//*[@class='apply-after']","//h4[@class='thanks'and contains(text(),'ご応募ありがとう')]");
 
     private static List<String> xpath_toFill = Arrays.asList("//input[@value='次へ進む']",
-            "//p[@class='present-apl-btn']/input[@value='応募する']");
+            "//p[@class='present-apl-btn']/input[@value='応募する']","//input[contains(@value,'上記の内容で応募する') and @type='submit']");
+            
+    private static List<String> xpath_send = Arrays.asList("//input[@alt='送信' and contains(@src,'def_pc_1')]",
+            "//input[contains(@value,'回答して応募する') and @type='submit']");
 
     /**
      * 在已打开页面上查找所有可用奖品信息，并将[链接，文本，当前时间]汇总为Present的List
@@ -80,7 +83,7 @@ public class Find {
             btn = findByXpath(driver, xpath);
             if (btn != null) {
                 return btn;
-            }
+            } 
         }
         return null;
     }
@@ -126,13 +129,15 @@ public class Find {
      * @param driver
      * @return 找到了返回true，未找到则返回false
      */
-    public static Boolean findSendBtn(WebDriver driver) {
-        String xpath = "//input[@alt='送信' and contains(@src,'def_pc_1')]";
-        WebElement btn = findByXpath(driver, xpath);
-        if (btn != null) {
-            return true;
+    public static WebElement findSendBtn(WebDriver driver) {
+        WebElement btn = null;
+        for (String xpath : xpath_send) {
+            btn = findByXpath(driver, xpath);
+            if (btn != null) {
+                return btn;
+            }
         }
-        return false;
+        return null;
     }
 
     public static boolean findFillFailed(WebDriver driver) {

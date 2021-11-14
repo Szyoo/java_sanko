@@ -14,15 +14,16 @@ public class Driver {
      */
     public static WebDriver setDriver() {
         try {
-            System.setProperty("webdriver.chrome.driver", "chromedriver_94.exe");
+            System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
 
-            options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User Data");
-            options.addArguments("--profile-directory=Profile 6");
+            // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
+            // Data");
+            // options.addArguments("--profile-directory=Profile 6");
 
-            // options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
-            // options.addArguments("--profile-directory=Default");
+            options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
+            options.addArguments("--profile-directory=Default");
 
             return new ChromeDriver(options);
         } catch (Exception e) {
@@ -56,11 +57,21 @@ public class Driver {
      */
     public static void switchNextWindow(WebDriver driver) {
         // 获取所有窗口句柄
-        for (String window : driver.getWindowHandles()) {
-            if (!window.equals(driver.getWindowHandle())) {
+        String handle = driver.getWindowHandle();
+        Set<String> handles = driver.getWindowHandles();
+        for (String window : handles) {
+            if (!window.equals(handle)) {
+                // 关闭当前窗口
+                driver.close();
                 // 切换到下一个窗口句柄
                 driver.switchTo().window(window);
             }
         }
+        // String handle = driver.getWindowHandle();
+        // Set<String> winHandels = driver.getWindowHandles(); // 得到当前窗口的set集合
+        // List<String> it = new ArrayList<String>(winHandels); // 将set集合存入list对象
+        // if (it.size() > 1 && (!it.get(1).equals(handle))) {
+        // driver.switchTo().window(it.get(1)); // 切换到弹出的新窗口
+        // }
     }
 }

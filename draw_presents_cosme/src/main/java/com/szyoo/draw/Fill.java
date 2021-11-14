@@ -16,14 +16,14 @@ import org.openqa.selenium.support.ui.Select;
 public class Fill {
     private static List<String> keywords = Arrays.asList("クレンジング料", "化粧水", "乳液", "クリーム", "アイクリーム・ジェル", "デパート・百貨店",
             "化粧品専門店", "ドラッグストア", "乾燥肌", "ウォーター・ミスト", "ボディクリーム", "保湿", "乾燥を防ぐ", "興味がある", "うるおい", "低刺激", "とても満足",
-            "使用したことはない", "を与える", "透明感", "嬉しい", "わからない", "00円以上", "応募にあたり、選択したブランドを「お気に入り登録」します", "非常に傷んでいる", "シャンプー",
-            "洗い流すトリートメント（ポンプタイプ）", "リンス・コンディショナー", "仕上がり", "気になることがある", "アイブロウ", "アイライナー", "アイシャドウ", "チーク", "口紅",
-            "長さが出る", "ボリューム", "自然", "セミロング", "香りが好き", "乾燥", "ニキビ", "しっかり落としたい", "新しい商品はすぐに試してみたい", "試すのが好きだ",
-            "信頼できるメーカーやブランド", "ダメージをケアする", "洗い流すトリートメント", "美容成分配合である", "魅力的だ", "ペンシルタイプ", "リキッドタイプ", "細くも太くも描ける",
-            "描きやすい", "ボディソープ（泡で出てくるタイプ）", "手洗い", "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度",
-            "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない", "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用",
-            "標準色", "化粧のりがよい", "くずれにくい", "週に", "大切だと思う", "歯ブラシ", "上記を確認の上、応募する","うるおう","全てのブランドをお気に入り登録して応募
-            ");
+            "使ったことはないが、よく知っている", "＠ｃｏｓｍｅ", "SNS", "商品を購入してみたい", "テスターを使ってみたい", "使用したことはない", "を与える", "透明感", "嬉しい",
+            "わからない", "00円以上", "応募にあたり、選択したブランドを「お気に入り登録」します", "非常に傷んでいる", "シャンプー", "洗い流すトリートメント（ポンプタイプ）",
+            "リンス・コンディショナー", "仕上がり", "気になることがある", "アイブロウ", "アイライナー", "アイシャドウ", "チーク", "口紅", "長さが出る", "ボリューム", "自然",
+            "セミロング", "香りが好き", "乾燥", "ニキビ", "しっかり落としたい", "新しい商品はすぐに試してみたい", "試すのが好きだ", "信頼できるメーカーやブランド", "ダメージをケアする",
+            "洗い流すトリートメント", "美容成分配合である", "魅力的だ", "ペンシルタイプ", "リキッドタイプ", "細くも太くも描ける", "描きやすい", "ボディソープ（泡で出てくるタイプ）", "手洗い",
+            "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度", "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない",
+            "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用", "標準色", "化粧のりがよい", "くずれにくい", "週に",
+            "大切だと思う", "歯ブラシ", "上記を確認の上、応募する", "うるおう", "全てのブランドをお気に入り登録して応募");
 
     /**
      * 填表完成后调用，点击送信按钮并判断处理送信结果
@@ -33,10 +33,11 @@ public class Fill {
      */
     public static void send(WebDriver driver, Present present) {
         try {
-            driver.findElement(By.cssSelector("input[alt=送信]")).click();
+            Find.findSendBtn(driver).click();
             if (checkSend(driver)) {
                 present.setDrew(true);
-                present.setDrawDate(new Date());
+                present.setDrawDate();
+                Present.countDraw();
             } else {
                 // 送信失败，可能是有必填项目未填写，手动填写后在控制台确认
                 InputController.waitRefill();
@@ -50,7 +51,7 @@ public class Fill {
     private static Boolean checkSend(WebDriver driver) {
         if (Find.findDrew(driver)) {
             return true;
-        } else if (!Find.findSendBtn(driver)) {
+        } else if (Find.findSendBtn(driver) == null) {
             try {
                 Find.findDrawBtn(driver); // 回到了最初品牌界面说明已经抽完
                 return true;
@@ -67,17 +68,24 @@ public class Fill {
      * @return boolean 完成后返回true
      */
     public static boolean fillQuestion(WebDriver driver) {
-        List<WebElement> list = driver.findElements(By.cssSelector("td>span>label"));
-        for (WebElement label : list) {
-            for (String key : keywords) {
-                // 若Label中存在指定关键词则点击其下属的input
-                if (label.getText().contains(key)) {
-                    try {
-                        label.findElement(By.cssSelector("input")).click();
-                    } catch (Exception e) {
-                        System.out.println(label.getText() + " 点击失败");
+        String[] xpath = { "//td/span/label", "//div[@class='qa']/div/label" };
+        List<WebElement> list = new ArrayList<WebElement>();
+        for (String string : xpath) {
+            list = driver.findElements(By.xpath(string));
+            for (WebElement label : list) {
+                for (String key : keywords) {
+                    // 若Label中存在指定关键词则点击其下属的input
+                    if (label.getText().contains(key)) {
+                        try {
+                            label.findElement(By.cssSelector("input")).click();
+                        } catch (Exception e) {
+                            System.out.println(label.getText() + " 点击失败");
+                        }
                     }
                 }
+            }
+            if (list.size() > 0) {
+                break;
             }
         }
         try {
@@ -131,7 +139,9 @@ public class Fill {
                 input.clear();
                 input.sendKeys(str[i + 1]);
             } catch (Exception e) {
-                System.out.println("查找" + str[i] + "输入框失败");
+                if (!driver.getCurrentUrl().contains("cosme.net/brand")) {
+                    System.out.println("查找" + str[i] + "输入框失败");
+                }
                 return false;
             }
         }
