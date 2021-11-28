@@ -105,28 +105,45 @@ public class Present {
      * @return
      */
     public static List<Present> unionPresent(List<Present> presents_new, List<Present> presents_old) {
+        List<String> link_new = new ArrayList<String>();
+        List<String> link_cover = new ArrayList<String>();
         List<Present> result = new ArrayList<Present>();
-        int unionCount = 0;
-        int ununionCount = 0;
+        int oldCount = 0; //旧奖品沿用计数
+        int coverCount = 0; //旧奖品覆盖相同新奖品计数
+        int newCount = 0;//新奖品计数
+        System.out.print("开始整合奖品数据...");
         for (Present p_new : presents_new) {
-            Boolean unionFlag = false;
-            for (Present p_old : presents_old) {
-                if (p_old.getLink().equals(p_new.getLink())) {// 存在相同链接对象
-                    result.add(p_old);// 将文件内存储的对象覆盖到当前List
-                    unionFlag = true;
-                    unionCount++;
-                    break;
-                }
-            }
-            if (!unionFlag) {// 当前新增对象不包含在文件内
-                result.add(p_new);
-                ununionCount++;
+            link_new.add(p_new.getLink()); //将所有新奖品的链接添加到一个List中方便对应查找
+        }
+        for (Present p_old : presents_old) {
+            // 将所有旧奖品信息添加到当前队列
+            String link = p_old.getLink();
+            result.add(p_old);
+            if (link_new.contains(link)) { 
+                //旧奖品链接在新奖品中也存在，则添加覆盖标记
+                link_cover.add(link);
+                coverCount++;
+            }else{
+                //旧奖品链接无直接存在的新奖品，直接沿用
+                oldCount++;
             }
         }
-        System.out.println("数据整合成功！");
-        System.out.println("读取到的旧数据共：" + presents_old.size() + " 条");
-        System.out.println("整合之后的数据共：" + result.size() + " 条：");
-        System.out.println("其中包含: 旧数据沿用: " + unionCount + "条，新增数据: " + ununionCount + "条");
+        for (Present p_new : presents_new) {
+            String link = p_new.getLink();
+            if (link_cover.contains(link)) {
+                //链接已标记，跳过当前奖品
+                continue;
+            } else {
+                //全新奖品，添加到当前队列
+                result.add(p_new);
+                newCount++;
+            }
+        }
+        System.out.println("奖品数据整合成功！");
+        System.out.println("读取到的旧奖品共：" + presents_old.size() + " 个");
+        System.out.println("读取到的新奖品共：" + presents_new.size() + " 个");
+        System.out.println("整合之后的奖品共：" + result.size() + " 个");
+        System.out.println("其中包含: 已失效旧奖品: "+oldCount+"个, 仍有效的旧奖品沿用: " + coverCount + "个，新增全新奖品: " + newCount + "个");
         return result;
     }
 

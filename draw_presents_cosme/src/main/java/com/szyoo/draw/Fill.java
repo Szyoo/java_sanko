@@ -32,11 +32,13 @@ public class Fill {
      */
     public static void send(WebDriver driver, Present present) {
         try {
+            System.out.print(" 填写完成");
             Find.findSendBtn(driver).click();
             if (checkSend(driver)) {
                 present.setDrew(true);
                 present.setDrawDate();
                 Present.countDraw();
+                System.out.println(" 送信成功，记录并开始下一个抽取");
             } else {
                 // 送信失败，可能是有必填项目未填写，手动填写后在控制台确认
                 InputController.waitRefill();
@@ -69,6 +71,7 @@ public class Fill {
     public static boolean fillQuestion(WebDriver driver) {
         String[] xpath = { "//td/span/label", "//div[@class='qa']/div/label" };
         List<WebElement> list = new ArrayList<WebElement>();
+        System.out.print(" 开始填写表格内容");
         for (String string : xpath) {
             list = driver.findElements(By.xpath(string));
             for (WebElement label : list) {
@@ -98,7 +101,7 @@ public class Fill {
                     .findElement(By.xpath("//td[contains(.,'ご希望の')]/../following-sibling::tr[1]"));
             // 定位所有input选择框
             List<WebElement> itemList = itemChoiceTR.findElements(By.cssSelector("td>span>label>input"));
-            System.out.println("存在多个奖品可选择，请输入对应编号选择");
+            System.out.println("\n存在多个奖品可选择，请输入对应编号选择");
 
             List<String> content = new ArrayList<String>();
             List<Integer> choiceNum = new ArrayList<Integer>();

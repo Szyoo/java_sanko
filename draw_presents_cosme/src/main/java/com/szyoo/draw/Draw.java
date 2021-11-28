@@ -41,7 +41,7 @@ public class Draw {
     public static Boolean drawOnce(WebDriver driver, Present present) {
         // 尝试进入填表页面，若失败则跳过
         if (gotoFill(driver, present)) {
-            System.out.println(" 开始抽取");
+            System.out.print(" 开始抽取");
             Fill.fillQuestion(driver);
             Fill.fillName(driver);
             // if (InputController.chekcContinue()) {
