@@ -18,12 +18,15 @@ public class Driver {
 
             ChromeOptions options = new ChromeOptions();
 
-            // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
-            // Data");
+            //小雅电脑配置
+            // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User Data");
             // options.addArguments("--profile-directory=Profile 6");
 
+            //远程桌面配置
             options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
             options.addArguments("--profile-directory=Default");
+
+            
 
             return new ChromeDriver(options);
         } catch (Exception e) {
