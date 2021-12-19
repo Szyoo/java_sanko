@@ -22,7 +22,7 @@ public class Fill {
             "洗い流すトリートメント", "美容成分配合である", "魅力的だ", "ペンシルタイプ", "リキッドタイプ", "細くも太くも描ける", "描きやすい", "ボディソープ（泡で出てくるタイプ）", "手洗い",
             "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度", "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない",
             "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用", "標準色", "化粧のりがよい", "くずれにくい", "週に",
-            "大切だと思う", "歯ブラシ", "上記を確認の上、応募する", "うるおう", "全てのブランドをお気に入り登録して応募");
+            "大切だと思う", "歯ブラシ", "上記を確認の上、応募する", "うるおう", "全てのブランドをお気に入り登録して応募","スキンケア");
 
     /**
      * 填表完成后调用，点击送信按钮并判断处理送信结果
@@ -32,13 +32,13 @@ public class Fill {
      */
     public static void send(WebDriver driver, Present present) {
         try {
-            System.out.print(" 填写完成");
+            System.out.print("填写完成..");
             Find.findSendBtn(driver).click();
             if (checkSend(driver)) {
                 present.setDrew(true);
                 present.setDrawDate();
                 Present.countDraw();
-                System.out.println(" 送信成功，记录并开始下一个抽取");
+                System.out.println("送信成功..记录并开始下一个抽奖");
             } else {
                 // 送信失败，可能是有必填项目未填写，手动填写后在控制台确认
                 InputController.waitRefill();
@@ -71,7 +71,7 @@ public class Fill {
     public static boolean fillQuestion(WebDriver driver) {
         String[] xpath = { "//td/span/label", "//div[@class='qa']/div/label" };
         List<WebElement> list = new ArrayList<WebElement>();
-        System.out.print(" 开始填写表格内容");
+        System.out.print("开始填写表格..");
         for (String string : xpath) {
             list = driver.findElements(By.xpath(string));
             for (WebElement label : list) {
