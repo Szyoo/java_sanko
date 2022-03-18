@@ -3,7 +3,7 @@ package com.szyoo.draw;
 import java.util.List;
 
 import com.szyoo.Driver;
-import com.szyoo.InputController;
+// import com.szyoo.InputController;
 import com.szyoo.Present;
 
 import org.openqa.selenium.WebDriver;
@@ -19,14 +19,15 @@ public class Draw {
         int count = 0;
         System.out.println("开始抽奖啦，祝你好运！~~");
         for (Present p : presents) {
-            System.out.print("当前进度: " + ++count + "/" + presentsSize);
+            count++;
             if (!p.getDrew()) { // 未过抽奖
+                System.out.print("当前进度: " + count + "/" + presentsSize);
                 driver.get(p.getLink()); // 跳转奖品介绍界面
                 if (!Draw.drawOnce(driver, p)) {
                     break;
                 }
             } else {
-                System.out.println(" 存档记录已抽取，跳过");
+                // System.out.println(" 存档记录已抽取，跳过");
             }
         }
     }

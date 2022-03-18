@@ -5,6 +5,7 @@ import java.util.Set;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class Driver {
     /**
@@ -12,7 +13,7 @@ public class Driver {
      * 
      * @return WebDriver
      */
-    public static WebDriver setDriver() {
+    public static WebDriver setDriverChrome() {
         try {
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
@@ -28,6 +29,22 @@ public class Driver {
             return new ChromeDriver(options);
         } catch (Exception e) {
             System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
+            System.exit(0);
+        }
+        return null;
+    }
+
+    /**
+     * 设置Driver路径，并启动Edge
+     * 
+     * @return WebDriver
+     */
+    public static WebDriver setDriverEdge() {
+        try {
+            System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
+            return new EdgeDriver();
+        } catch (Exception e) {
+            System.out.println("驱动加载失败，请关闭当前所有已开启的Edge浏览器后重新运行程序");
             System.exit(0);
         }
         return null;
