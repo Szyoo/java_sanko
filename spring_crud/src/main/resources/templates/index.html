@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  th:replace="~{common/layout_3block :: layout(~{::body/content()})}"
+>
+  <head>
+    <title>ログイン | 社員管理システム</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body th:object="${loginForm}">
+    <th:block th:fragment="layout-main">
+      <h3>ログイン画面</h3>
+      <form method="post" th:action="@{/login}" th:object="${loginForm}">
+        <!-- エラーメッセージの出力 -->
+        <p>
+          <!-- <span th:each="error:${#fields.detailedErrors()}"> -->
+            <span th:text="${errormessage}"></span><br />
+          <!-- </span> -->
+        </p>
+
+        <div class="label">社員ID</div>
+        <!-- <div class="input"><input type="text" th:field="*{empId}" /></div> -->
+        <div class="input"><input type="text" name="empId" /></div>
+
+        <div class="label">パスワード</div>
+        <!-- <div class="input"><input type="password" th:field="*{empPass}" /></div> -->
+        <div class="input"><input type="password" name="empPass" /></div>
+
+        <div class="label"></div>
+        <div class="input"><input type="submit" value="ログイン" /></div>
+      </form>
+    </th:block>
+  </body>
+</html>
