@@ -20,7 +20,7 @@ class AppTest {
      */
     @Test
     void testApp() throws IOException {
-        WebDriver driver = Driver.setDriver();
+        WebDriver driver = Driver.setDriverChrome();
         String link = "https://www.cosme.net/brand/brand_id/1705/top";
 
         driver.get(link);
@@ -35,7 +35,7 @@ class AppTest {
 
     @Test
     void countBtn() {
-        WebDriver driver = Driver.setDriver();
+        WebDriver driver = Driver.setDriverChrome();
         List<Present> presents = Find.searchPresentToList(driver);
         countDrawBtn(presents, driver);
         Present.showCall();
