@@ -16,8 +16,8 @@ public class Main {
         // JFrame frame = new SwingGUI("@COSME 抽奖程序");
         // frame.setVisible(true);
 
-        // WebDriver driver = Driver.setDriverChrome();
-        WebDriver driver = Driver.setDriverEdge();
+        WebDriver driver = Driver.setDriverChrome();
+        // WebDriver driver = Driver.setDriverEdge();
 
         System.out.println("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<\n| Welcome to Take a Shot |\n>>>>>>>> (￣ω￣= >>>>>>>>>\n");
 
