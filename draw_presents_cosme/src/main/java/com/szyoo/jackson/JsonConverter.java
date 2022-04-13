@@ -81,10 +81,12 @@ public class JsonConverter {
 
     public static List<Present> updateList(List<Present> presents) {
         String jsonString = JsonFile.readJson();
-        List<Present> presentsNew = null;
+        List<Present> presentsNew = new ArrayList<Present>();
         if (!jsonString.equals("")) {
             List<Present> presents_old = listToPresents(jsonString);
             presentsNew = Present.unionPresent(presents, presents_old);
+        } else {
+            return presents;
         }
         return presentsNew;
     }

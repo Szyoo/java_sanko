@@ -12,10 +12,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Find {
-    private static List<String> xpath_draw = Arrays.asList("btn-green",
-            "//a[contains(.,'こちら') and contains(@rel,'nofollow')]", "//p[contains(text(),'すぐ応募')]",
+    private static List<String> xpath_draw = Arrays.asList("btn-green", "//p[contains(text(),'すぐ応募')]",
             "//p[contains(.,'応募する')]", "//p[contains(.,'応募する')]", "//a[contains(.,'すぐ応募')]",
             "//*[contains(@class,'article-item box-image banner')]/a/img[contains(@src,'bt4.png')]", "//a[contains(.,'PCから応募')]",
+            "//a[text() = 'こちら' and contains(@rel,'nofollow')]",
+            "//a[contains(.,'こちら') and contains(@rel,'nofollow')]",
             "//img[contains(@src,'037_123_original_pc_bt4.png')]", "//span[contains(text(),'応募する')]","//input[@value='応募する' and @type='button']");
     private static List<String> xpath_drew = Arrays.asList("//*[contains(text(),'応募済み')]",
             "//*[contains(text(),'すでに回答済')]", "//*[contains(.,'すでに回答済')]", "//*[@class='apply-after']","//h4[@class='thanks'and contains(text(),'ご応募ありがとう')]");
