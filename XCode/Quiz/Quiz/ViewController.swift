@@ -11,14 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
+    
+    var date = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.label.text = "Hello"
+        self.label.text = self.date.description
     }
-
+    
     @IBAction func pressButton(_ sender: Any) {
-        self.label.text = "Pressed the button"
+        self.date.addTimeInterval(60*60*3)
+        self.label.text = self.date.description
     }
     
 }
