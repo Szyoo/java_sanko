@@ -8,11 +8,11 @@ public class Question01 {
 
 	public static void main(String[] args)throws NumberFormatException,IOException {
 		
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("数字を入力してください＞");
 		
-		int num = Integer.parseInt(reader.readLine());
+		int num = Integer.parseInt(br.readLine());
 		
 	}
 

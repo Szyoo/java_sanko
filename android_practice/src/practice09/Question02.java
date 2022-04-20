@@ -7,12 +7,12 @@ import java.io.InputStreamReader;
 public class Question02 {
 
 	public static void main(String[] args) {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("数字を入力してください＞");
 		
 		try {
-			int num = Integer.parseInt(reader.readLine());
+			int num = Integer.parseInt(br.readLine());
 		} catch (NumberFormatException | IOException e) {
 			System.out.println("入力値に間違いがあります");
 		} finally {

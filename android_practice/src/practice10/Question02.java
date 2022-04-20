@@ -7,11 +7,11 @@ import java.io.InputStreamReader;
 public class Question02 {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("小文字で英単語を入力してください＞");
 		
-		String lowerCase = reader.readLine();
+		String lowerCase = br.readLine();
 		
 		String upperCase = lowerCase.toUpperCase();
 		

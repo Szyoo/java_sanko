@@ -6,7 +6,7 @@ public class Hogemon {
 	private String attack;
 	/** 防御技 */
 	private String defense;
-	
+
 	/**
 	 * コンストラクタ
 	 */
@@ -29,7 +29,7 @@ public class Hogemon {
 	public void setDefense(String defense) {
 		this.defense = defense;
 	}
-	
+
 	public void bark() {
 		System.out.println("ほげほげ！");
 	}

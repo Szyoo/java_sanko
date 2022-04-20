@@ -1,18 +1,18 @@
 package practice05;
 
 public class Monster {
-	
+
 	public String name;
-	static int sum;
-	
+	static int count;
+
 	public Monster(String name) {
 		this.name = name;
 		System.out.println("野生の" + this.name + "が現れた！");
-		sum++;
+		count++;
 	}
-	
+
 	public static void showSum() {
-		System.out.println("敵は全部で" + sum + "体だ！");
+		System.out.println("敵は全部で" + count + "体だ！");
 	}
 
 }

@@ -9,11 +9,11 @@ import java.util.regex.Pattern;
 public class Question06 {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("メールアドレスを入力してください＞");
 
-		String email = reader.readLine();
+		String email = br.readLine();
 
 		Pattern p = Pattern.compile("^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(.[a-zA-Z]+)*$");
 

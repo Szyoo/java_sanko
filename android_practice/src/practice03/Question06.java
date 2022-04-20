@@ -7,24 +7,19 @@ import java.io.InputStreamReader;
 public class Question06 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
 		int sum = 0;
-		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 		while (sum < 150) {
 			System.out.print("数字を入力してください＞");
-			
-			int addNum = Integer.parseInt(reader.readLine());
-			
-			if (addNum % 5 == 0) {
+			int num = Integer.parseInt(br.readLine());
+			if (num % 5 == 0) {
 				System.out.println("5の倍数が入力されたので引きます");
-				sum -= addNum;
+				sum -= num;
 				continue;
 			}
-			
-			sum += addNum;
+			sum += num;
 		}
-		
 		System.out.println("合計" + sum + "で終了しました");
 
 	}

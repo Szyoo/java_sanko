@@ -10,11 +10,11 @@ public class Question03 {
 		
 		int num1 = 30;
 		int num2 = 23;
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("1つ目の整数を入力してください＞");
-		int num1 = Integer.parseInt(reader.readLine());
+		num1 = Integer.parseInt(br.readLine());
 		System.out.print("2つ目の整数を入力してください＞");
-		int num2 = Integer.parseInt(reader.readLine());
+		num2 = Integer.parseInt(br.readLine());
 		if(num1 > num2) {
 			System.out.println("1つ目の数字は2つ目の数字より大きいです");
 		} else  if(num1 < num2){

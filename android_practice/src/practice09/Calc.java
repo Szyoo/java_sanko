@@ -7,15 +7,15 @@ import java.io.InputStreamReader;
 public class Calc {
 
 	public void division() throws NumberFormatException, IOException, ArithmeticException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 			System.out.print("1つ目の数字を入力してください＞");
 			
-			int num1 = Integer.parseInt(reader.readLine());
+			int num1 = Integer.parseInt(br.readLine());
 			
 			System.out.print("2つ目の数字を入力してください＞");
 			
-			int num2 = Integer.parseInt(reader.readLine());
+			int num2 = Integer.parseInt(br.readLine());
 			
 			int result = num1 / num2;
 			

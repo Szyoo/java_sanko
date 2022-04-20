@@ -7,19 +7,17 @@ import java.io.InputStreamReader;
 public class Question04 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("最初の数を入力してください＞");
-		
-		int startNum = Integer.parseInt(reader.readLine());
-		
+		int num1 = Integer.parseInt(br.readLine());
+
 		do {
 			System.out.print("足す数字を入力してください＞");
-			int minusNum = Integer.parseInt(reader.readLine());
-			startNum += minusNum;
-		} while (startNum <= 100);
-		
-		System.out.println("100より大きくなったので" + startNum + "で終了しました");
+			int num2 = Integer.parseInt(br.readLine());
+			num1 += num2;
+		} while (num1 <= 100);
+
+		System.out.println("100より大きくなったので" + num1 + "で終了しました");
 	}
 
 }
