@@ -6,7 +6,5 @@ public class Question01 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println("今" + (i + 1) + "回目の繰り返しです");
 		}
-
 	}
-
 }
