@@ -63,6 +63,8 @@ public class Draw {
      */
     public static boolean gotoFill(WebDriver driver, Present present) {
         int failCount = 0;
+        boolean onclickFlag1 = false;
+        boolean onclickFlag2 = false;
         do {
             // 十次循环内始终保证当前处于正确窗口
             Driver.switchNextWindow(driver);
@@ -80,6 +82,7 @@ public class Draw {
                 // 尝试在找到募集按钮的情况下点击
                 Find.findDrawBtn(driver).click();
                 Thread.sleep(2000);
+                onclickFlag2 = true;
                 continue;
             } catch (Exception e) {
             }
@@ -87,6 +90,7 @@ public class Draw {
                 // 尝试在找到确认个人信息按钮的情况下点击
                 Find.findToFillBtn(driver).click();
                 Thread.sleep(4000);
+                onclickFlag1 = true;
             } catch (Exception e) {
             }
             if (Find.findDrew(driver)) {
@@ -94,7 +98,11 @@ public class Draw {
                 present.setDrew(true);
                 present.setDrawDate();
                 Present.countDraw();
-                System.out.println(" 检测到已抽取，记录并跳过");
+                if (onclickFlag1 && onclickFlag2) {
+                    System.out.println("抽取成功，记录并开始下一个抽奖");
+                } else {
+                    System.out.println(" 检测到已抽取，记录并跳过");
+                }
                 return false;
             } else if (!(Find.findSendBtn(driver)==null)) {
                 // 找到填表界面内的送信按钮时返回true

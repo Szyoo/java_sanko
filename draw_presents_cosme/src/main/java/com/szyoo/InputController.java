@@ -27,7 +27,8 @@ public class InputController {
     }
 
     public static void waitRefill() {
-        System.out.println("\n！！！Oooops\n送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以确认继续\n！！！Oooops");
+        System.out.println("\n！！！Oooops！！！\n送信失败，可能是有必填项目未填写，请检查浏览器并手动填写后在此输入 'ok' 以确认继续\n！！！Oooops！！！");
+        System.out.print(">  ");
         String input = "";
         while (true) {
             try {
