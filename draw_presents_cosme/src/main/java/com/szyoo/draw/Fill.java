@@ -23,7 +23,7 @@ public class Fill {
             "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度", "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない",
             "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用", "標準色", "化粧のりがよい", "くずれにくい", "週に",
             "自宅", "大切だと思う", "日差しの強い季節", "歯ブラシ", "上記を確認の上、応募する", "うるおう", "全てのブランドをお気に入り登録して応募", "言葉だけは知っている",
-            "日焼け止めを使用している", "スキンケア","「白髪」は全くない","満足している ");
+            "日焼け止めを使用している", "スキンケア","「白髪」は全くない","満足している","応募にあたり");
 
     /**
      * 填表完成后调用，点击送信按钮并判断处理送信结果
@@ -69,7 +69,7 @@ public class Fill {
      * @param driver
      * @return boolean 完成后返回true
      */
-    public static boolean fillQuestion(WebDriver driver) {
+    public static boolean fillQuestion(WebDriver driver, Present present) {
         String[] xpath = { "//td/span/label", "//div[@class='qa']/div/label" };
         List<WebElement> list = new ArrayList<WebElement>();
         System.out.print("开始填写表格..");
@@ -102,7 +102,9 @@ public class Fill {
                     .findElement(By.xpath("//td[contains(.,'ご希望の')]/../following-sibling::tr[1]"));
             // 定位所有input选择框
             List<WebElement> itemList = itemChoiceTR.findElements(By.cssSelector("td>span>label>input"));
-            System.out.println("\n存在多个奖品可选择，请输入对应编号选择");
+            System.out.println("\n存在多个奖品可选择，奖品链接如下：");
+            System.out.println(present.getLink());
+            System.out.println("\n请查看后输入对应编号选择奖品");
 
             List<String> content = new ArrayList<String>();
             List<Integer> choiceNum = new ArrayList<Integer>();

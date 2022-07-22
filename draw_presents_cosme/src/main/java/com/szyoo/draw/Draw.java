@@ -43,7 +43,7 @@ public class Draw {
         // 尝试进入填表页面，若失败则跳过
         if (gotoFill(driver, present)) {
             System.out.print(" 开始抽取..");
-            Fill.fillQuestion(driver);
+            Fill.fillQuestion(driver, present);
             Fill.fillName(driver);
             // if (InputController.chekcContinue()) {
                 Fill.send(driver, present);
@@ -99,7 +99,7 @@ public class Draw {
                 present.setDrawDate();
                 Present.countDraw();
                 if (onclickFlag1 && onclickFlag2) {
-                    System.out.println("抽取成功，记录并开始下一个抽奖");
+                    System.out.println(" 抽取成功，记录并开始下一个抽奖");
                 } else {
                     System.out.println(" 检测到已抽取，记录并跳过");
                 }
