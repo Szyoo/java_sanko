@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">プロファイル編集サンプル</string>
+    <string name="title">プロファイル編集</string>
+    <string name="title_name">名前</string>
+    <string name="tittle_phone">電話番号</string>
+    <string name="title_mail">メールアドレス</string>
+    <string name="title_year">学年</string>
+    <string-array name="spinner_year">
+        <item>1年次</item>
+        <item>2年次</item>
+        <item>3年次</item>
+        <item>4年次</item>
+    </string-array>
+    <string name="title_comment">一言コメント</string>
+</resources>

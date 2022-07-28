@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ケーキ一覧サンプル</string>
+    <string name="dialog_title">注文確認</string>
+    <string name="dialog_msg">選択されたケーキを注文します。よろしいですか。</string>
+    <string name="dialog_btn_ok">注文</string>
+    <string name="dialog_btn_ng">キャンセル</string>
+    <string name="dialog_btn_nu">問い合わせ</string>
+    <string name="dialog_ok_toast">を注文しました。</string>
+    <string name="dialog_ng_toast">ご注文をキャンセルしました。</string>
+    <string name="dialog_nu_toast">お問い合わせ内容をお知らせください。</string>
+</resources>

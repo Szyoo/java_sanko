@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ログインサンプル</string>
+    <string name="nameLabel">アカウント名</string>
+    <string name="passwordLabel">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="forgot">パスワードをお忘れの方はこちら</string>
+</resources>
