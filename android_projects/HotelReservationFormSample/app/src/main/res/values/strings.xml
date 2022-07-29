@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ホテル予約フォームサンプル</string>
+    <string name="label_name">お名前</string>
+    <string name="label_phone">電話番号</string>
+    <string name="label_wishDate">宿泊予定日</string>
+    <string name="label_roomStyle">お部屋のスタイル</string>
+    <string name="western">洋室</string>
+    <string name="japanese">和室</string>
+    <string name="label_wishPerson">宿泊予定人数</string>
+    <string name="label_bfStyle">朝食のスタイル</string>
+    <string name="inRoom">部屋食</string>
+    <string name="viking">バイキング</string>
+    <string name="label_bottomSend">送信</string>
+    <string-array name="spinner_wishPerson">
+        <item>1人</item>
+        <item>2人</item>
+        <item>3人</item>
+    </string-array>
+
+</resources>
