@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -15,13 +16,26 @@ import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
+    private ListView _lvMenu;
+    private List<Map<String, String>> _itemList;
+    private static final String[] FROM = {"name", "price"};
+    private static final int[] TO = {R.id.tvMenuNameRow, R.id.tvMenuPriceRow};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.w("FashionSiteSample", "MainActivity:onCreate() called.");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView menu = findViewById(R.id.menu);
+        _lvMenu = findViewById(R.id.menu);
+        _itemList = createList();
+        SimpleAdapter adapter = new SimpleAdapter(MainActivity.this, _itemList, R.layout.row, FROM, TO);
+        _lvMenu.setAdapter(adapter);
+
+        _lvMenu.setOnItemClickListener(new ItemClickListener());
+    }
+
+    private List<Map<String, String>> createList() {
         List<Map<String, String>> itemList = new ArrayList<>();
 
         String[] name = {"ジャケット", "ダウンジャケット", "Tシャツ", "Yシャツ", "パーカー",
@@ -37,15 +51,10 @@ public class MainActivity extends AppCompatActivity {
             itemList.add(item);
         }
 
-        String[] from = {"name", "price"};
-        int[] to = {android.R.id.text1, android.R.id.text2};
-        SimpleAdapter adapter = new SimpleAdapter(MainActivity.this, itemList, android.R.layout.simple_list_item_2, from, to);
-        menu.setAdapter(adapter);
-
-        menu.setOnItemClickListener(new ListItemClickListener());
+        return itemList;
     }
 
-    private class ListItemClickListener implements AdapterView.OnItemClickListener {
+    private class ItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Map<String, String> item = (Map<String, String>) parent.getItemAtPosition(position);
