@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    private ListView _lvMenu;
+    private ListView _menu;
     private List<Map<String, String>> _itemList;
     private static final String[] FROM = {"name", "price"};
-    private static final int[] TO = {R.id.tvMenuNameRow, R.id.tvMenuPriceRow};
+    private static final int[] TO = {R.id.labelNameRow, R.id.labelPriceRow};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _lvMenu = findViewById(R.id.menu);
+        _menu = findViewById(R.id.menu);
         _itemList = createList();
         SimpleAdapter adapter = new SimpleAdapter(MainActivity.this, _itemList, R.layout.row, FROM, TO);
-        _lvMenu.setAdapter(adapter);
+        _menu.setAdapter(adapter);
 
-        _lvMenu.setOnItemClickListener(new ItemClickListener());
+        _menu.setOnItemClickListener(new ItemClickListener());
     }
 
     private List<Map<String, String>> createList() {
@@ -66,4 +66,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    public boolean
 }
