@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>遷移後の画面</div>
+	<p th:text="${userName}"></p>
+	<p th:text="${password}"></p>
+	
+	<div></div>
+	<table>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr th:each="user : ${users}">
+			<td th:text="${user.userId}"></td>
+			<td th:text="${user.userName}"></td>
+			<td th:text="${user.authority}"></td>
+		</tr>
+	</table>
+</body>
+</html>
