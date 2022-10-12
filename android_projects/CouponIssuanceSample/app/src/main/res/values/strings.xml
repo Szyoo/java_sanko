@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">クーポン発行サンプル</string>
+    <string name="jpy_label">\円</string>
+    <string name="item_percent_label">\％引き!</string>
+    <string name="menu_list_options_box">弁当</string>
+    <string name="menu_list_options_bread">パン</string>
+    <string name="menu_list_context_header">操作を選んでください。</string>
+    <string name="menu_list_context_detail">詳細表示</string>
+    <string name="menu_list_context_ticketing">発券</string>
+    <string name="detail_title_label">商品詳細</string>
+    <string name="detail_ticketing_label">発券する</string>
+    <string name="complete_title_label">発券中です・・・</string>
+</resources>

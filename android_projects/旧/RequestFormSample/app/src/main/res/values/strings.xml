@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">サークル申し込みフォームサンプル</string>
+    <string name="nameLabel">ニックネーム</string>
+    <string name="mailLabel">メールアドレス</string>
+    <string name="phoneLabel">電話番号</string>
+    <string name="eventLabel">参加したいイベント</string>
+    <string name="selectLabel1">幹事を希望する</string>
+    <string name="wish">希望する</string>
+    <string name="no_wish">希望しない</string>
+    <string name="selectLabel2">アレルギーの有無</string>
+    <string name="yes">あり</string>
+    <string name="no">なし</string>
+    <string name="send">送信</string>
+</resources>

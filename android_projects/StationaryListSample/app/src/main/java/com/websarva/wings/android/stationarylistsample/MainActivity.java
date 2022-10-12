@@ -51,10 +51,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             String item = (String) parent.getItemAtPosition(position);
-            String show = item + "が選択されました。";
-            Toast.makeText(MainActivity.this, show, Toast.LENGTH_LONG).show();
+//            String show = item + "が選択されました。";
+//            Toast.makeText(MainActivity.this, show, Toast.LENGTH_LONG).show();
 
             OrderConfirmDialogFragment dialogFragment = new OrderConfirmDialogFragment();
+            dialogFragment.setOrderItem(item);
             dialogFragment.show(getSupportFragmentManager(), "OrderConfirmDialogFragment");
         }
     }

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             saveData.put("bbb", "bbb");
             saveData.put("ccc", "ccc");
 
-            if (saveData.get(name).equals(pw)) {
+            if (saveData.get(name) != null && saveData.get(name).equals(pw)) {
                 msg.setText("ようこそ！" + name + "さん");
             } else {
                 msg.setText("アカウント名、パスワードが間違っています");

@@ -2,8 +2,13 @@
     <string name="app_name">ファッションサイトサンプル</string>
     <string name="label_confirm">注文確認</string>
     <string name="bt_confirm">注文する</string>
-    <string name="bt_confirmBack">リストに戻る</string>
+<!--    <string name="bt_confirmBack">リストに戻る</string>-->
     <string name="label_complete">注文完了</string>
     <string name="label_thanks">以下のメニューのご注文を受け付けました。\nご注文ありがとうございます。</string>
-    <string name="bt_completeBack">確認画面に戻る</string>
+<!--    <string name="bt_completeBack">確認画面に戻る</string>-->
+    <string name="menu_list_options_main">トップス</string>
+    <string name="menu_list_options_hat">帽子</string>
+    <string name="menu_list_context_header">操作を選んでください。</string>
+    <string name="menu_list_context_detail">詳細表示</string>
+    <string name="menu_list_context_purchase">購入</string>
 </resources>
