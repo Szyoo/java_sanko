@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Fill {
     private static List<String> keywords = Arrays.asList("クレンジング料", "化粧水", "乳液", "クリーム", "アイクリーム・ジェル", "デパート・百貨店",
             "化粧品専門店", "ドラッグストア", "乾燥肌", "ウォーター・ミスト", "ボディクリーム", "保湿", "乾燥を防ぐ", "興味がある", "うるおい", "低刺激", "とても満足",
-            "使ったことはないが、よく知っている", "＠ｃｏｓｍｅ", "SNS", "商品を購入してみたい", "テスターを使ってみたい", "使用したことはない", "を与える", "透明感", "嬉しい",
+            "使ったことはないが、よく知っている", "＠ｃｏｓｍｅ", "SNS", "商品を購入してみたい", "テスターを使ってみたい", "使用したことはないが", "を与える", "透明感", "嬉しい",
             "わからない", "00円以上", "応募にあたり、選択したブランドを「お気に入り登録」します", "非常に傷んでいる", "シャンプー", "洗い流すトリートメント（ポンプタイプ）",
             "リンス・コンディショナー", "仕上がり", "気になることがある", "アイブロウ", "アイライナー", "アイシャドウ", "チーク", "口紅", "長さが出る", "ボリューム", "自然",
             "セミロング", "香りが好き", "乾燥", "ニキビ", "しっかり落としたい", "新しい商品はすぐに試してみたい", "試すのが好きだ", "信頼できるメーカーやブランド", "ダメージをケアする",
@@ -23,7 +23,7 @@ public class Fill {
             "スポンジ", "水や汗に強い", "白くならない", "日焼けしない", "肌に負担のない", "肌に優しい", "1回程度", "ネイルカラー", "やや敏感", "施術を受けたことはないし、興味もない",
             "ときどきある", "冷たいものがしみる", "ムシ歯になりやすい", "肌がしっとりする", "顔や体に「日焼け止め」を使用", "標準色", "化粧のりがよい", "くずれにくい", "週に",
             "自宅", "大切だと思う", "日差しの強い季節", "歯ブラシ", "上記を確認の上、応募する", "うるおう", "全てのブランドをお気に入り登録して応募", "言葉だけは知っている",
-            "日焼け止めを使用している", "スキンケア","「白髪」は全くない","満足している","応募にあたり");
+            "日焼け止めを使用している", "スキンケア", "「白髪」は全くない", "満足している", "応募にあたり");
 
     /**
      * 填表完成后调用，点击送信按钮并判断处理送信结果
@@ -31,15 +31,20 @@ public class Fill {
      * @param driver
      * @param present
      */
-    public static void send(WebDriver driver, Present present) {
+    public static Boolean send(WebDriver driver, Present present) {
         try {
             System.out.print("填写完成..");
             Find.findSendBtn(driver).click();
             if (checkSend(driver)) {
+                if (Find.findOvertime(driver)) {
+                    return false;
+                } else {
                 present.setDrew(true);
                 present.setDrawDate();
                 Present.countDraw();
-                System.out.println("送信成功..记录并开始下一个抽奖");
+                System.out.println("送信成功..记录并开始下一个抽奖");   
+                return true;
+                }
             } else {
                 // 送信失败，可能是有必填项目未填写，手动填写后在控制台确认
                 InputController.waitRefill();
@@ -48,12 +53,13 @@ public class Fill {
         } catch (Exception e) {
             System.out.println("送信按钮查找失败");
         }
+        return false;
     }
 
     private static Boolean checkSend(WebDriver driver) {
         if (Find.findDrew(driver)) {
             return true;
-        } else if (Find.findSendBtn(driver) == null) {
+        }else if(Find.findSendBtn(driver) == null) {
             try {
                 Find.findDrawBtn(driver); // 回到了最初品牌界面说明已经抽完
                 return true;
@@ -90,11 +96,6 @@ public class Fill {
             if (list.size() > 0) {
                 break;
             }
-        }
-        try {
-            driver.findElement(By.xpath("//label[contains(.,'使用したことはないが、興味はある')]")).findElement(By.cssSelector("input"))
-                    .click();
-        } catch (Exception e) {
         }
         try {
             // 定位商品选择文字td的父元素tr的下一个，即商品选择所在tr

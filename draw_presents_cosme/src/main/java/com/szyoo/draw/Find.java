@@ -125,6 +125,20 @@ public class Find {
     }
 
     /**
+     * 查找超时标签
+     * 
+     * @param driver
+     * @return 找到了返回true，未找到则返回false
+     */
+    public static Boolean findOvertime(WebDriver driver) {
+        WebElement btn = findByXpath(driver, "回答時間エラー");
+        if (btn != null) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * 查找送信按钮
      * 
      * @param driver

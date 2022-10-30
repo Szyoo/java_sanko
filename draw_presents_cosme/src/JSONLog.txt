@@ -910,3 +910,40 @@
 {"link":"https://www.cosme.net/brand/brand_id/199/top/nt","name":"ミノンベビー『全身シャンプー』『全身保湿ミルク』 / ミノン\n計10名様現品\n新シリーズ「ミノンベビー」を試せるチャンス！\n応募する","scanDate":1665323652313,"drawDate":1665324268848,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/126/top","name":"トリートメントインシャンプー / ニッピコラーゲン化粧品\n計10名様現品\n3種のプレミアムコラーゲン配合のシャンプー\n応募する","scanDate":1665323652373,"drawDate":1665324302839,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/119350/top/nt","name":"SNSで話題！フェルゼアプレミアム薬用泡の化粧水 / フェルゼア\n計20名様現品\n繊細な“顔の肌”を考えた、泡で出る薬用化粧水\n応募する","scanDate":1665323652406,"drawDate":1665324336057,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=393979","name":"MEDIHEAL(メディヒール)","scanDate":1665564618563,"drawDate":1665564640686,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=390132","name":"ファンケル","scanDate":1665564618595,"drawDate":1665564656320,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391795","name":"ALFACE+(オルフェス)","scanDate":1665564618624,"drawDate":1665564669035,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392282","name":"ランコム","scanDate":1665564618655,"drawDate":1665564684467,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391013","name":"エスティ ローダー","scanDate":1665564618685,"drawDate":1665564696758,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391749","name":"アリィー(ALLIE)","scanDate":1665564618716,"drawDate":1665564708680,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391845","name":"Anua","scanDate":1665564618748,"drawDate":1665564720880,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=395116","name":"ヴァレンティノ ビューティ","scanDate":1665564618779,"drawDate":1665564733953,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391933","name":"オペラ","scanDate":1665564618810,"drawDate":1665564745820,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392239","name":"ランコム","scanDate":1665564618843,"drawDate":1665564759512,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391356","name":"banilaco(韓国)","scanDate":1665564618872,"drawDate":1665564773316,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391716","name":"50の恵","scanDate":1665564619240,"drawDate":1665564786812,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392529","name":"espoir","scanDate":1665564619271,"drawDate":1665564804833,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392431","name":"プロアクティブ","scanDate":1665564619302,"drawDate":1665564850708,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18947","name":"メイクアップ","scanDate":1666021200370,"drawDate":1666021325144,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18948","name":"カルテHD モイスチュア フェイス＆ボディローション","scanDate":1666021200414,"drawDate":1666021344215,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18949","name":"デイジードール ルース パウダー","scanDate":1666021200457,"drawDate":1666021359900,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18950","name":"アップデートネイル","scanDate":1666021200499,"drawDate":1666021373870,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/106070/top/nt","name":"スリーペアでしっとり＋CCTで簡単時短メイク！ / Dr.Jart+\n計20名様現品\n秋の夜長にオーバーナイトマスクとCCTで美肌ケア?\n応募する","scanDate":1666021204812,"drawDate":1666021432606,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/3948/top","name":"名品トーンアップUVをセットでプレゼント / ラ ロッシュ ポゼ\n計20名様現品\nエイジングケア＆角質ケア美容液を試せる豪華セット\n応募する","scanDate":1666021204841,"drawDate":1666021469559,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/122666/top/nt","name":"ドクダミ 77％ スージングトナー現品プレゼント / Anua\n計20名様現品\n季節の変わり目、ゆらぎ肌ケアで話題のドクダミトナー\n応募する","scanDate":1666021204918,"drawDate":1666021509103,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/119338/top","name":"混ぜて使える新発想！2WAYカスタムヘアオイル / ボトルワークス\n計10名様現品\nパサつき?ゴワつき抑え、さらさらまとまる蜜髪へ\n応募する","scanDate":1666021205255,"drawDate":1666021528346,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/62/top/nt","name":"グラン アイ セラム V / クラランス\n計20名様現品\n秋めく季節も、大胆で魅力的なまなざしを。\n応募する","scanDate":1666021206097,"drawDate":1666021572765,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/368/top","name":"敏感肌もつっぱらない。クレンジングと洗顔セット！ / ドクターシーラボ\n計20名様現品\n＼20名様に／ゆらぎやすい肌に！お守り洗顔?\n応募する","scanDate":1666021206175,"drawDate":1666021613815,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/1264/top","name":"オリエンタルプランツ トリートメントバーム / Koh Gen Do\n計20名様現品\n約80％がエモリエントオイルの濃厚バーム。\n応募する","scanDate":1666021206262,"drawDate":1666021654111,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/8985/top","name":"SNSで話題！finoのヘアマスクとヘアオイル / フィーノ\n計20名様現品\n裏切りのトリートメント体験で、まさかのとぅる髪へ\n応募する","scanDate":1666021206308,"drawDate":1666021672847,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=394336","name":"ナチュリエ","scanDate":1666454779797,"drawDate":null,"drew":false}
+{"link":"https://as.iy.impact-ad.jp/ct?id=390662","name":"ニベア","scanDate":1666454780032,"drawDate":1666454865798,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392100","name":"フィーノ","scanDate":1666454780235,"drawDate":1666454905350,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=393798","name":"ラ ロッシュ ポゼ","scanDate":1666454780643,"drawDate":1666457121123,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392462","name":"イハダ","scanDate":1666454780770,"drawDate":1666457176821,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=388570","name":"エリクシール","scanDate":1666454780830,"drawDate":1666457241349,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=390853","name":"パンテーン","scanDate":1666454780895,"drawDate":1666458326951,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=393900","name":"d プログラム","scanDate":1666454780930,"drawDate":1666458580568,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=392568","name":"エトヴォス","scanDate":1666454781848,"drawDate":1666458633787,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=391972","name":"シック","scanDate":1666454781881,"drawDate":1666458676853,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/8985/top/nt","name":"SNSで話題！finoのヘアマスクとヘアオイル / フィーノ\n計20名様現品\n裏切りのトリートメント体験で、まさかのとぅる髪へ\n応募する","scanDate":1666454787990,"drawDate":1666458689841,"drew":true}

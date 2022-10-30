@@ -45,11 +45,9 @@ public class Draw {
             System.out.print(" 开始抽取..");
             Fill.fillQuestion(driver, present);
             Fill.fillName(driver);
-            // if (InputController.chekcContinue()) {
-                Fill.send(driver, present);
-            // } else {
-            //     return false;
-            // }
+            if (Fill.send(driver, present) == false) { // 出现超时，重置流程
+                drawOnce(driver, present);
+            }
         }
         return true;
     }
@@ -104,7 +102,7 @@ public class Draw {
                     System.out.println(" 检测到已抽取，记录并跳过");
                 }
                 return false;
-            } else if (!(Find.findSendBtn(driver)==null)) {
+            } else if (!(Find.findSendBtn(driver) == null)) {
                 // 找到填表界面内的送信按钮时返回true
                 return true;
             }
