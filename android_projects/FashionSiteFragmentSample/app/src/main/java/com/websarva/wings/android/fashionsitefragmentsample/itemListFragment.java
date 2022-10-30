@@ -24,6 +24,18 @@ public class itemListFragment extends Fragment {
     private static final String[] FROM = {"name", "price"};
     private static final int[] TO = {R.id.itemNameRowLabel, R.id.itemPriceRowLabel};
 
+    private boolean _isLayoutXLarge = true;
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Activity parentActivity = getActivity();
+        View ConfirmFrame = parentActivity.findViewById(R.id.ConfirmFrame);
+        if(ConfirmFrame == null) {
+            _isLayoutXLarge = false;
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Activity parentActivity = getActivity();
@@ -66,9 +78,23 @@ public class itemListFragment extends Fragment {
             String price = item.get("price");
             Activity parentActivity = getActivity();
             Intent intent = new Intent(parentActivity, ConfirmActivity.class);
-            intent.putExtra("name", name);
-            intent.putExtra("price", price);
-            startActivity(intent);
+            Bundle bundle = new Bundle();
+            bundle.putString("name", name);
+            bundle.putString("price", price);
+
+            if(_isLayoutXLarge) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                ConfirmFragment cf = new ConfirmFragment();
+                cf.setArguments(bundle);
+                transaction.replace(R.id.orderConfirmationFrame, orderConfirmationFragment);
+                transaction.commit();
+            }
+            else {
+                Intent intent = new Intent(parentActivity, ConfirmActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
         }
     }
 
