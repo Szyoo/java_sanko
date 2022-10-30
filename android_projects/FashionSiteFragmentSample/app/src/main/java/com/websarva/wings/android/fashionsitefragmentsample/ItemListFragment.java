@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class itemListFragment extends Fragment {
+public class ItemListFragment extends Fragment {
     private ListView _menu;
     private List<Map<String, String>> _itemList;
     private static final String[] FROM = {"name", "price"};
@@ -77,7 +79,6 @@ public class itemListFragment extends Fragment {
             String name = item.get("name");
             String price = item.get("price");
             Activity parentActivity = getActivity();
-            Intent intent = new Intent(parentActivity, ConfirmActivity.class);
             Bundle bundle = new Bundle();
             bundle.putString("name", name);
             bundle.putString("price", price);
@@ -87,7 +88,7 @@ public class itemListFragment extends Fragment {
                 FragmentTransaction transaction = manager.beginTransaction();
                 ConfirmFragment cf = new ConfirmFragment();
                 cf.setArguments(bundle);
-                transaction.replace(R.id.orderConfirmationFrame, orderConfirmationFragment);
+                transaction.replace(R.id.confirmFrame, cf);
                 transaction.commit();
             }
             else {

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/fragmentItemList"
-        android:name="com.websarva.wings.android.fashionsitefragmentsample.itemListFragment"
+        android:name="com.websarva.wings.android.fashionsitefragmentsample.ItemListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </FrameLayout>
