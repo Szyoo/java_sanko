@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">家計簿サンプル</string>
+    <string name="tv_title">お金の使用状況を記録しましょう！</string>
+    <string name="tv_remaining_money">残金</string>
+    <string name="tv_yen">円</string>
+    <string name="tv_comment_title">入出金のコメント</string>
+    <string name="tv_money">金額</string>
+    <string name="bt_save">保存</string>
+    <string name="tv_history">入出金履歴</string>
+</resources>

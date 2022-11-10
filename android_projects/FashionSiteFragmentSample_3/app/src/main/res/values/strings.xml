@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ファッションサイトフラグメント</string>
+    <string name="item_list_options_tops">トップス</string>
+    <string name="item_list_options_hat">帽子</string>
+    <string name="item_list_context_header">操作を選んでください。</string>
+    <string name="item_list_context_detail">詳細表示</string>
+    <string name="item_list_context_order">購入</string>
+    <string name="tv_confirmation_title">注文確認</string>
+    <string name="bt_confirmation_order">注文する</string>
+    <string name="tv_completed_title">注文完了</string>
+    <string name="tv_completed_desc">以下のメニューのご注文を受け付けました。\nご注文ありがとうございます。</string>
+    <string name="bt_back">戻る</string>
+</resources>

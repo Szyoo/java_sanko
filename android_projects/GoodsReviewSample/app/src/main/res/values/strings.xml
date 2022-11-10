@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">アイスクリームレビュー</string>
+    <string-array name="lv_icecream_list">
+        <item>バニラ</item>
+        <item>チョコ</item>
+        <item>イチゴ</item>
+        <item>ピーチ</item>
+        <item>パイン</item>
+        <item>抹茶</item>
+        <item>クッキーバニラ</item>
+    </string-array>
+    <string name="tv_ice_name">選んだアイス</string>
+    <string name="tv_name">未選択</string>
+    <string name="tv_review">レビュー</string>
+    <string name="btn_save">保存</string>
+</resources>
