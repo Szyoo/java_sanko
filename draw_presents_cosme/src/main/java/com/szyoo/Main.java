@@ -2,23 +2,18 @@ package com.szyoo;
 
 import java.util.List;
 
-import javax.swing.JFrame;
 
 import com.szyoo.draw.Draw;
 import com.szyoo.draw.Find;
-import com.szyoo.gui.SwingGUI;
 import com.szyoo.jackson.JsonConverter;
 import org.openqa.selenium.WebDriver;
 
 public class Main {
     public static void main(String[] args) {
 
-        // JFrame frame = new SwingGUI("@COSME 抽奖程序");
-        // frame.setVisible(true);
-
-        // WebDriver driver = Driver.setDriverChrome();
+        WebDriver driver = Driver.setDriverChrome();
         // WebDriver driver = Driver.setDriverEdge();
-        WebDriver driver = Driver.setDriverFirefox();
+        // WebDriver driver = Driver.setDriverFirefox();
 
         System.out.println("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<\n| Welcome to Take a Shot |\n>>>>>>>> (￣ω￣= >>>>>>>>>\n");
 
