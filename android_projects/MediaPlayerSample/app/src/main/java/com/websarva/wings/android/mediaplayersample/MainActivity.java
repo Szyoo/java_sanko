@@ -10,8 +10,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -63,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         ListView lvAudio = findViewById(R.id.lvAudio);
         lvAudio.setAdapter(adapter);
         lvAudio.setOnItemClickListener(new ListItemClickListener());
+
+        SwitchMaterial loopSwitch = findViewById(R.id.switchLoop);
+        loopSwitch.setOnCheckedChangeListener(new LoopSwitchChangedListener());
+
+        audioPreparation("cat");
     }
 
     private class ListItemClickListener implements AdapterView.OnItemClickListener {
@@ -120,25 +128,25 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 戻るボタンタップ時の処理メソッド。
      */
-//    public void onBackButtonClick(View view) {
-//        // 再生位置を先頭に変更。
-//        _player.seekTo(0);
-//    }
+    public void onBackButtonClick(View view) {
+        // 再生位置を先頭に変更。
+        _player.seekTo(0);
+    }
 
     /**
      * 進むボタンタップ時の処理メソッド。
      */
-//    public void onForwardButtonClick(View view) {
-//        // 現在再生中のメディファイルの長さを取得。
-//        int duration = _player.getDuration();
-//        // 再生位置を終端に変更。
-//        _player.seekTo(duration);
-//        // 再生中でないなら…
-//        if (!_player.isPlaying()) {
-//            // 再生を開始。
-//            _player.start();
-//        }
-//    }
+    public void onForwardButtonClick(View view) {
+        // 現在再生中のメディファイルの長さを取得。
+        int duration = _player.getDuration();
+        // 再生位置を終端に変更。
+        _player.seekTo(duration);
+        // 再生中でないなら…
+        if (!_player.isPlaying()) {
+            // 再生を開始。
+            _player.start();
+        }
+    }
 
     /**
      * プレーヤーの再生準備が整った時のリスナクラス。
@@ -149,6 +157,10 @@ public class MainActivity extends AppCompatActivity {
             // 各ボタンをタップ可能に設定。
             Button btPlay = findViewById(R.id.btPlay);
             btPlay.setEnabled(true);
+            Button btBack = findViewById(R.id.btBack);
+            btBack.setEnabled(true);
+            Button btForward = findViewById(R.id.btForward);
+            btForward.setEnabled(true);
         }
     }
 
@@ -170,12 +182,34 @@ public class MainActivity extends AppCompatActivity {
     /**
      * リピート再生スイッチの切替時のリスナクラス。
      */
-//    private class LoopSwitchChangedListener implements CompoundButton.OnCheckedChangeListener {
-//        @Override
-//        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//            // ループするかどうかを設定。
-//            _player.setLooping(isChecked);
-//        }
-//    }
+    private class LoopSwitchChangedListener implements CompoundButton.OnCheckedChangeListener {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            // ループするかどうかを設定。
+            _player.setLooping(isChecked);
+        }
+    }
+
+    private void audioPreparation(String key){
+        Uri uri = audioList.get(key);
+        try {
+            boolean isLooping = _player.isLooping();
+            _player.reset();
+            _player.setDataSource(MainActivity.this, uri);
+            _player.setOnPreparedListener(new PlayerPreparedListener());
+            _player.setOnCompletionListener(new PlayerCompletionListener());
+            _player.prepareAsync();
+            _player.setLooping(isLooping);
+        }
+        catch (IOException ex) {
+            Log.e("MediaSample", "メディアプレーヤー準備の例外発生", ex);
+        }
+
+        Button btPlay = findViewById(R.id.btPlay);
+        btPlay.setText(R.string.bt_play_play);
+
+        TextView tvCurrentSelect = findViewById(R.id.tvCurrentSelect);
+        tvCurrentSelect.setText(key);
+    }
 }
 
