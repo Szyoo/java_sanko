@@ -1110,3 +1110,8 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=397260","name":"¥³¥¹¥á¥Ç¥³¥ë¥Æ","scanDate":1671883066210,"drawDate":1671883454054,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=399751","name":"SUQQU(¥¹¥Ã¥¯)","scanDate":1671883066237,"drawDate":1671883483491,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=399400","name":"dr365","scanDate":1671883066453,"drawDate":1671883518432,"drew":true}
+{"link":"https://www.cosme.net/brandcollection/present/detail/present_id/8243","name":"¥¢¥Ñ¥¬©`¥É","scanDate":1672247007570,"drawDate":1672247038525,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=397625","name":"¥ë¥ë¥ë¥ó","scanDate":1672247007641,"drawDate":1672247066321,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=401087","name":"TIRTIR","scanDate":1672247007669,"drawDate":1672247091471,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=396322","name":"¥¤¥Ë¥¹¥Õ¥ê©`","scanDate":1672247008103,"drawDate":1672247115733,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402974","name":"¥Ð¥¤¥¿¥ë¥×¥í¥Æ¥¤¥ó¥º","scanDate":1672247008130,"drawDate":1672247136191,"drew":true}
