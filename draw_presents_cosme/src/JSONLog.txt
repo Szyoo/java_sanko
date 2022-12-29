@@ -1074,3 +1074,39 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=398422","name":"ライフセラ","scanDate":1670828127008,"drawDate":1670829182161,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=394807","name":"アバンタイム","scanDate":1670828127038,"drawDate":1670829207830,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/20785/top/nt","name":"【大好評】SABONの神髄！スクラブ3種セット / SABON(サボン)\n計20名様現品\n全身をなめらかなつや肌に磨き上げて。\n応募する","scanDate":1670828130084,"drawDate":1670829222002,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18977","name":"ルナルークス コレクション","scanDate":1671414826434,"drawDate":1671414852291,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18978","name":"グッドナイトピローミスト","scanDate":1671414826466,"drawDate":1671414864448,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18979","name":"Numero Zero (ヌメロ?ゼロ)","scanDate":1671414826501,"drawDate":1671414876202,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18980","name":"RXザレチノール0.1クリーム","scanDate":1671414826535,"drawDate":1671414887357,"drew":true}
+{"link":"https://www.cosme.net/brandcollection/present/detail/present_id/8184","name":"リバイタル","scanDate":1671414826560,"drawDate":1671414899684,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=397345","name":"SK-II","scanDate":1671414826587,"drawDate":1671414909336,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=397444","name":"ルルルン","scanDate":1671414826613,"drawDate":1671414917566,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=396991","name":"エリクシール","scanDate":1671414826639,"drawDate":1671414927751,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=401449","name":"SUQQU(スック)","scanDate":1671414826672,"drawDate":1671414940022,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402226","name":"ニベア","scanDate":1671414826703,"drawDate":1671414949993,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=396826","name":"ウエラ","scanDate":1671414826728,"drawDate":1671415070311,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=396266","name":"&Prism／&honey／ululis","scanDate":1671414826755,"drawDate":1671415097059,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402607","name":"ネイチャーリパブリック","scanDate":1671414827566,"drawDate":1671415127224,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=400012","name":"リバイタル","scanDate":1671414827601,"drawDate":1671415150069,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=399511","name":"デジャヴュ","scanDate":1671414827630,"drawDate":1671415233323,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=399845","name":"BAUM","scanDate":1671414827659,"drawDate":1671415260044,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=401160","name":"カウブランド無添加","scanDate":1671414828247,"drawDate":1671415275318,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/123034/top/nt","name":"バウム　ハイドロ エッセンスローション / BAUM\n計10名様現品\n樹木由来の貯水成分配合のローションとオイル状乳液\n応募する","scanDate":1671414830679,"drawDate":1671415304747,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18982","name":"カームナイトリペアジェルヘアマスク/リラックスナイトリペアジェルヘアマスク","scanDate":1671883065033,"drawDate":1671883087757,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18983","name":"束感カールマスカラ","scanDate":1671883065062,"drawDate":1671883099281,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18984","name":"薬用リップスティック/海の宝石","scanDate":1671883065090,"drawDate":1671883109329,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/18981","name":"IZM PEACH TASTE ZERO","scanDate":1671883065125,"drawDate":1671883120578,"drew":true}
+{"link":"https://www.cosme.net/brandcollection/present/detail/present_id/8244","name":"TIRTIR","scanDate":1671883065150,"drawDate":1671883141010,"drew":true}
+{"link":"https://www.cosme.net/brandcollection/present/detail/present_id/8233","name":"ランコム","scanDate":1671883065175,"drawDate":1671883158527,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=397576","name":"ルルルン","scanDate":1671883065198,"drawDate":1671883181439,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402733","name":"アトリックス","scanDate":1671883065221,"drawDate":1671883201838,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=399335","name":"AHRES(アーレス)","scanDate":1671883065260,"drawDate":1671883285162,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402770","name":"デジャヴュ","scanDate":1671883065286,"drawDate":1671883303559,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=396149","name":"アスタリフト","scanDate":1671883065311,"drawDate":1671883324697,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=402375","name":"hadakara","scanDate":1671883065336,"drawDate":1671883340028,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=403553","name":"D-UP(ディーアップ)","scanDate":1671883065361,"drawDate":1671883356234,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=398176","name":"フローラノーティス ジルスチュアート","scanDate":1671883066160,"drawDate":1671883387634,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=398987","name":"マテリアプリマ","scanDate":1671883066185,"drawDate":1671883420881,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=397260","name":"コスメデコルテ","scanDate":1671883066210,"drawDate":1671883454054,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=399751","name":"SUQQU(スック)","scanDate":1671883066237,"drawDate":1671883483491,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=399400","name":"dr365","scanDate":1671883066453,"drawDate":1671883518432,"drew":true}
