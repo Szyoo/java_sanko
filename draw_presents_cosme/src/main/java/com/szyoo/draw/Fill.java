@@ -34,9 +34,9 @@ public class Fill {
     public static Boolean send(WebDriver driver, Present present) {
         try {
             System.out.print("填写完成..");
-            Find.findSendBtn(driver).click();
+            Find.findSendBtn().click();
             if (checkSend(driver)) {
-                if (Find.findOvertime(driver)) {
+                if (Find.findOvertime()) {
                     return false;
                 } else {
                 present.setDrew(true);
@@ -57,11 +57,11 @@ public class Fill {
     }
 
     private static Boolean checkSend(WebDriver driver) {
-        if (Find.findDrew(driver)) {
+        if (Find.findDrew()) {
             return true;
-        }else if(Find.findSendBtn(driver) == null) {
+        }else if(Find.findSendBtn() == null) {
             try {
-                Find.findDrawBtn(driver); // 回到了最初品牌界面说明已经抽完
+                Find.findDrawBtn(); // 回到了最初品牌界面说明已经抽完
                 return true;
             } catch (Exception e1) {
             }

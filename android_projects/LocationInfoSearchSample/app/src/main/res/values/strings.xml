@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">位置情報検索サンプル</string>
+    <string name="tv_map_search_title">検索する場所を入力してください</string>
+    <string name="bt_map_search">地図検索</string>
+    <string name="tv_search_location_title">緯度・経度を入力してください</string>
+    <string name="tv_latitude_title">緯度</string>
+    <string name="tv_longitude_title">経度</string>
+    <string name="bt_current_title">現在地を入力</string>
+    <string name="bt_show_map">地図表示</string>
+</resources>

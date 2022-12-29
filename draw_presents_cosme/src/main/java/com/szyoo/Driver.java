@@ -14,6 +14,11 @@ public class Driver {
      * 
      * @return WebDriver
      */
+
+    public static WebDriver driver = Driver.setDriverChrome();
+    // WebDriver driver = Driver.setDriverEdge();
+    // WebDriver driver = Driver.setDriverFirefox();
+
     public static WebDriver setDriverChrome() {
         try {
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");

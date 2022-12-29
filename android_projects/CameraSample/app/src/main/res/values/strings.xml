@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">カメラサンプル</string>
+    <string name="tv_photo_name_title">撮影する写真の名前を入力</string>
+    <string name="bt_camera">カメラ起動</string>
+</resources>

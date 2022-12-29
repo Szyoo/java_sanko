@@ -8,7 +8,6 @@ import com.szyoo.Driver;
 import com.szyoo.Present;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Find {
@@ -30,26 +29,25 @@ public class Find {
     /**
      * 在已打开页面上查找所有可用奖品信息，并将[链接，文本，当前时间]汇总为Present的List
      * 
-     * @param driver
      * @return
      */
-    public static List<Present> searchPresentToList(WebDriver driver) {
+    public static List<Present> searchPresentToList() {
         System.out.println("开始识别奖品...\n请稍等...");
-        driver.get("https://www.cosme.net/present");
-        Driver.closeOtherWindow(driver);
+        Driver.driver.get("https://www.cosme.net/present");
+        Driver.closeOtherWindow(Driver.driver);
 
-        List<WebElement> presents_special = driver.findElements(By.cssSelector("a[href*='present/detail/present_id']"));
-        List<WebElement> presents_normal = driver.findElements(By.cssSelector("a[href*='/as.iy.impact-ad.jp/ct?id=']"));
+        List<WebElement> presents_special = Driver.driver.findElements(By.cssSelector("a[href*='present/detail/present_id']"));
+        List<WebElement> presents_normal = Driver.driver.findElements(By.cssSelector("a[href*='/as.iy.impact-ad.jp/ct?id=']"));
 
         List<Present> presents = new ArrayList<Present>();
 
         Present.addElement(presents_special, presents);
         Present.addElement(presents_normal, presents);
 
-        driver.get("https://www.cosme.net/brandfanclub/present");
-        Driver.closeOtherWindow(driver);
+        Driver.driver.get("https://www.cosme.net/brandfanclub/present");
+        Driver.closeOtherWindow(Driver.driver);
 
-        List<WebElement> presents_brand = driver.findElements(
+        List<WebElement> presents_brand = Driver.driver.findElements(
                 By.cssSelector("div[class=psnt]>ul[class=clearfix]>li>a[href*='cosme.net/brand/brand_id']"));
         Present.addElement(presents_brand, presents);
         System.out.println("识别完成！共识别到奖品：" + Present.getCall() + " 个");
@@ -61,10 +59,10 @@ public class Find {
      * 
      * @param xpath路径
      */
-    public static WebElement findByXpath(WebDriver driver, String xpath) {
+    public static WebElement findByXpath(String xpath) {
         WebElement btn = null;
         try {
-            btn = driver.findElement(By.xpath(xpath));
+            btn = Driver.driver.findElement(By.xpath(xpath));
             return btn;
         } catch (Exception e) {
             return null;
@@ -74,14 +72,13 @@ public class Find {
     /**
      * 在奖品一级介绍界面查找募集按钮，找到了返回WebElement，未找到则返回值为null的WebElement
      * 
-     * @param driver
      * @return WebElement 按钮对象或者Null
      * 
      */
-    public static WebElement findDrawBtn(WebDriver driver) {
+    public static WebElement findDrawBtn() {
         WebElement btn = null;
         for (String xpath : xpath_draw) {
-            btn = findByXpath(driver, xpath);
+            btn = findByXpath(xpath);
             if (btn != null) {
                 return btn;
             } 
@@ -92,14 +89,13 @@ public class Find {
     /**
      * 在点击募集后进入的个人信息确认界面查找确认募集按钮，找到了返回WebElement，未找到则返回值为null的WebElement
      * 
-     * @param driver
      * @return WebElement 按钮对象或者Null
      * 
      */
-    public static WebElement findToFillBtn(WebDriver driver) {
+    public static WebElement findToFillBtn() {
         WebElement btn;
         for (String xpath : xpath_toFill) {
-            btn = findByXpath(driver, xpath);
+            btn = findByXpath(xpath);
             if (btn != null) {
                 return btn;
             }
@@ -110,13 +106,12 @@ public class Find {
     /**
      * 查找已募集按钮或者已募集标签
      * 
-     * @param driver
      * @return 找到了返回true，未找到则返回false
      */
-    public static Boolean findDrew(WebDriver driver) {
+    public static Boolean findDrew() {
         WebElement btn = null;
         for (String xpath : xpath_drew) {
-            btn = findByXpath(driver, xpath);
+            btn = findByXpath(xpath);
             if (btn != null) {
                 return true;
             }
@@ -127,11 +122,10 @@ public class Find {
     /**
      * 查找超时标签
      * 
-     * @param driver
      * @return 找到了返回true，未找到则返回false
      */
-    public static Boolean findOvertime(WebDriver driver) {
-        WebElement btn = findByXpath(driver, "回答時間エラー");
+    public static Boolean findOvertime() {
+        WebElement btn = findByXpath("回答時間エラー");
         if (btn != null) {
             return true;
         }
@@ -141,13 +135,12 @@ public class Find {
     /**
      * 查找送信按钮
      * 
-     * @param driver
      * @return 找到了返回true，未找到则返回false
      */
-    public static WebElement findSendBtn(WebDriver driver) {
+    public static WebElement findSendBtn() {
         WebElement btn = null;
         for (String xpath : xpath_send) {
-            btn = findByXpath(driver, xpath);
+            btn = findByXpath(xpath);
             if (btn != null) {
                 return btn;
             }
@@ -155,7 +148,7 @@ public class Find {
         return null;
     }
 
-    public static boolean findFillFailed(WebDriver driver) {
+    public static boolean findFillFailed() {
         return false;
     }
 

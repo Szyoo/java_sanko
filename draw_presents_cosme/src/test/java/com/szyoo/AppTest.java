@@ -29,14 +29,14 @@ class AppTest {
         Present p = new Present();
         p.setLink(link);
 
-        Draw.drawOnce(driver, p);
+        Draw.drawOnce(p);
 
     }
 
     @Test
     void countBtn() {
         WebDriver driver = Driver.setDriverChrome();
-        List<Present> presents = Find.searchPresentToList(driver);
+        List<Present> presents = Find.searchPresentToList();
         countDrawBtn(presents, driver);
         Present.showCall();
     }
@@ -54,10 +54,10 @@ class AppTest {
 
         for (Present p : list) {
             driver.get(p.getLink());// 进入对应奖品的介绍界面
-            if (Find.findDrawBtn(driver) != null) {
+            if (Find.findDrawBtn() != null) {
                 System.out.println("Gotcha!");
                 success++;
-            } else if (Find.findDrew(driver)) {
+            } else if (Find.findDrew()) {
                 System.out.println("Already Drew!");
                 drew++;
             } else {
