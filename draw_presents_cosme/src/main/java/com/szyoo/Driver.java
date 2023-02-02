@@ -20,7 +20,7 @@ public class Driver {
     // WebDriver driver = Driver.setDriverFirefox();
 
     public static WebDriver setDriverChrome() {
-        try {
+        // try {
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
@@ -35,11 +35,11 @@ public class Driver {
             // options.addArguments("--no-sandbox");
 
             return new ChromeDriver(options);
-        } catch (Exception e) {
-            System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
-            System.exit(0);
-        }
-        return null;
+        // } catch (Exception e) {
+        //     System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
+        //     System.exit(0);
+        // }
+        // return null;
     }
 
     /**
