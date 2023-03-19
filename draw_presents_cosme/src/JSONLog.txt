@@ -1164,7 +1164,7 @@
 {"link":"https://www.cosme.net/brand/brand_id/114757/top/nt","name":"エレクトロン 薬用スカルプエッセンスファム / エレクトロン\n計20名様現品\nデンキバリブラシのエレクトロンから女性用育毛剤誕生\n応募する","scanDate":1675296689688,"drawDate":1675314532734,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/7623/top/nt","name":"ラネージュの新商品クリームがあたる！ / LANEIGE(ラネージュ)\n計20名様現品\n【新発売】乾いた肌をダメージケア！珠玉のクリーム\n応募する","scanDate":1675296689797,"drawDate":1675314559944,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/115303/top","name":"話題のピーリングセラムを20名様にプレゼント★ / MEDICUBE(メディキューブ)\n計20名様現品\nアクネ菌99.9%除去！自宅で味わうピーリングケア\n応募する","scanDate":1675296690147,"drawDate":1675314600573,"drew":true}
-{"link":"https://www.cosme.net/present/detail/present_id/19017","name":"ボディスクラブ チェリーブロッサム","scanDate":1676344826360,"drawDate":null,"drew":false}
+{"link":"https://www.cosme.net/present/detail/present_id/19017","name":"ボディスクラブ チェリーブロッサム","scanDate":1676344826360,"drawDate":null,"drew":true}
 {"link":"https://www.cosme.net/present/detail/present_id/19010","name":"NMNウォームピールウォッシュ","scanDate":1676344826390,"drawDate":1676344879762,"drew":true}
 {"link":"https://www.cosme.net/present/detail/present_id/19011","name":"メイクアップ クリーム カラープラス","scanDate":1676344826424,"drawDate":1676344891845,"drew":true}
 {"link":"https://www.cosme.net/present/detail/present_id/19013","name":"ミシャ ビタシープラス 化粧水","scanDate":1676344826451,"drawDate":1676344905586,"drew":true}
@@ -1235,3 +1235,13 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=407435","name":"floresca","scanDate":1677295999909,"drawDate":1677309252888,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=408700","name":"d プログラム","scanDate":1677295999938,"drawDate":1677309279563,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=406948","name":"ベネフィーク","scanDate":1677296000267,"drawDate":1677309305791,"drew":true}
+{"link":"https://www.cosme.net/brandcollection/present/detail/present_id/8374","name":"イニスフリー","scanDate":1677519223286,"drawDate":1677519356691,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19050","name":"アルブラン ザ ファーストエッセンス","scanDate":1679069437734,"drawDate":1679069666169,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19026","name":"フェイス＆ボディ ミルキーローション","scanDate":1679069437788,"drawDate":1679069700263,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19027","name":"アルガン ビオアクティブ クリーム","scanDate":1679069437835,"drawDate":1679069728279,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19028","name":"リプレニッシングモイスト クレンジングローション","scanDate":1679069437880,"drawDate":1679069746566,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19029","name":"ハイライトパウダー","scanDate":1679069437927,"drawDate":1679069757218,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=404830","name":"トワニー","scanDate":1679069437983,"drawDate":1679069796476,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=412224","name":"ディオール","scanDate":1679069438035,"drawDate":1679069843381,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/963/top/nt","name":"薬用足指さらさらクリーム / デオナチュレ\n計20名様現品\n汗?ニオイ対策！新生活の必需品はコレ！\n応募する","scanDate":1679069479374,"drawDate":1679069983843,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/119199/top","name":"CNPプロPシリーズのミニセット / CNP Laboratory(シーエヌピーラボラトリー)\n計20名様サンプル\nプロPシリーズでハリのあるもっちり肌に\n応募する","scanDate":1679069479579,"drawDate":1679070061893,"drew":true}
