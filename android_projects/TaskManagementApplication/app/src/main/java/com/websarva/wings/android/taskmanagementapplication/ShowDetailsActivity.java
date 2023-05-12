@@ -22,8 +22,20 @@ public class ShowDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_details);
 
-        //ここに処理を書く
+        Intent intent = getIntent();
+        int taskId = intent.getIntExtra("_id",-1);
 
+        Bundle bundle = new Bundle();
+        bundle.putInt("_id",taskId);
+        //ここに処理を書く
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        TaskDetailsFragment taskDetailsFragment = new TaskDetailsFragment();
+
+        taskDetailsFragment.setArguments(bundle);
+
+        transaction.replace(R.id.taskDetailFrame, taskDetailsFragment);
+        transaction.commit();
     }
 
     @Override

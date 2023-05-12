@@ -33,6 +33,10 @@ public class EditTaskFragment extends Fragment implements DatePickerDialog.OnDat
         View view = inflater.inflate(R.layout.fragment_edit_task, container, false);
 
         //ここに処理を書く
+        Button btEditDate = view.findViewById(R.id.btEditDate);
+        btEditDate.setOnClickListener(new OnEditDateButtonClickListener(EditTaskFragment.this));
+        Button btEditTime = view.findViewById(R.id.btEditTime);
+        btEditTime.setOnClickListener(new OnEditTimeButtonClickListener(EditTaskFragment.this));
 
         return view;
     }
