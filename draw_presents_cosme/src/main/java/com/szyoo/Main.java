@@ -10,8 +10,6 @@ import com.szyoo.jackson.JsonConverter;
 public class Main {
     public static void main(String[] args) {
 
-        
-
         System.out.println("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<\n| Welcome to Take a Shot |\n>>>>>>>> (￣ω￣= >>>>>>>>>\n");
 
         List<Present> presents = JsonConverter.updateList(Find.searchPresentToList());
