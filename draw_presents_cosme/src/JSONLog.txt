@@ -1783,7 +1783,7 @@
 {"link":"https://www.cosme.net/present/detail/present_id/19167","name":"センシュアルジャスミン リペアモイストシャンプー／トリートメント","scanDate":1693538455444,"drawDate":1693538571358,"drew":true}
 {"link":"https://www.cosme.net/present/detail/present_id/19162","name":"インザミラーアイパレット","scanDate":1693538455471,"drawDate":1693538599414,"drew":true}
 {"link":"https://www.cosme.net/present/detail/present_id/19158","name":"ヴィセ2点セット","scanDate":1693538455496,"drawDate":1693538622542,"drew":true}
-{"link":"https://as.iy.impact-ad.jp/ct?id=428110","name":"＼注目の成分特集／マイファーストコスメを合計150名様に！","scanDate":1693538455520,"drawDate":null,"drew":false}
+{"link":"https://as.iy.impact-ad.jp/ct?id=428110","name":"＼注目の成分特集／マイファーストコスメを合計150名様に！","scanDate":1693538455520,"drawDate":null,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=433521","name":"コスメデコルテ","scanDate":1693538455555,"drawDate":1693538673874,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=429905","name":"D-UP(ディーアップ)","scanDate":1693538455576,"drawDate":1693538702269,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=429034","name":"ヒアルモイスト","scanDate":1693538455604,"drawDate":1693538724719,"drew":true}
@@ -1884,10 +1884,10 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=431309","name":"CANADEL(カナデル)","scanDate":1694526698141,"drawDate":1694547871475,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=421784","name":"エリクシール","scanDate":1694526698158,"drawDate":1694547898918,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=431803","name":"セグレタ","scanDate":1694526698193,"drawDate":1694547928368,"drew":true}
-{"link":"https://as.iy.impact-ad.jp/ct?id=434818","name":"YA-MAN TOKYO JAPAN(ヤーマントウキョウジャパン)","scanDate":1694526698210,"drawDate":null,"drew":false}
-{"link":"https://as.iy.impact-ad.jp/ct?id=434579","name":"YA-MAN TOKYO JAPAN(ヤーマントウキョウジャパン)","scanDate":1694526698227,"drawDate":null,"drew":false}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434818","name":"YA-MAN TOKYO JAPAN(ヤーマントウキョウジャパン)","scanDate":1694526698210,"drawDate":null,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434579","name":"YA-MAN TOKYO JAPAN(ヤーマントウキョウジャパン)","scanDate":1694526698227,"drawDate":null,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=432353","name":"SHISEIDO","scanDate":1694526698242,"drawDate":1694548018836,"drew":true}
-{"link":"https://as.iy.impact-ad.jp/ct?id=428666","name":"アディクション","scanDate":1694526698258,"drawDate":null,"drew":false}
+{"link":"https://as.iy.impact-ad.jp/ct?id=428666","name":"アディクション","scanDate":1694526698258,"drawDate":null,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=433645","name":"SK-II","scanDate":1694548234496,"drawDate":1694548437341,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=428200","name":"キュレル","scanDate":1694548234515,"drawDate":1694548467729,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=433283","name":"plus eau（プリュスオー）","scanDate":1694548234535,"drawDate":1694549485459,"drew":true}
@@ -1903,3 +1903,48 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=432941","name":"エスト","scanDate":1694548235443,"drawDate":1694549885326,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=434686","name":"ゲラン","scanDate":1694548235460,"drawDate":1694549917686,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=436946","name":"ドクターシーラボ","scanDate":1694548235952,"drawDate":1694549952076,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19187","name":"ラブ?ライナー　オールラッシュ　マスク　ロング＆セパレート＜マスカラ＞","scanDate":1697181242843,"drawDate":1697181366918,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19191","name":"Vマジェスティックリンクルクリーム","scanDate":1697181242864,"drawDate":1697181379291,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19182","name":"ホイップフォームフェイシャルウォッシュ","scanDate":1697181242886,"drawDate":1697181391326,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19181","name":"しっとり潤うリップクリーム","scanDate":1697181242904,"drawDate":1697181403490,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434263","name":"エリクシール","scanDate":1697181242923,"drawDate":1697181436246,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431476","name":"CNP Laboratory(シーエヌピーラボラトリー)","scanDate":1697181242953,"drawDate":1697181464192,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=436641","name":"ミノン","scanDate":1697181243013,"drawDate":1697181492369,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434615","name":"アスタリフト","scanDate":1697181243036,"drawDate":1697181517764,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=430753","name":"ウルモア","scanDate":1697181243060,"drawDate":1697181546064,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434977","name":"クラランス","scanDate":1697181243085,"drawDate":1697181579280,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432541","name":"BOTANIST(ボタニスト)","scanDate":1697181243108,"drawDate":1697182338665,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434396","name":"ディアボーテ","scanDate":1697181243129,"drawDate":1697182363841,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439461","name":"ランコム","scanDate":1697181243158,"drawDate":1697182392902,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=436353","name":"プリオール","scanDate":1697181243180,"drawDate":1697182421668,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437283","name":"UZU BY FLOWFUSHI","scanDate":1697181243207,"drawDate":1697182447996,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434133","name":"Perfect Diary","scanDate":1697181243233,"drawDate":1697182475718,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437631","name":"マキアージュ","scanDate":1697181243255,"drawDate":1697182682577,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435520","name":"デジャヴュ","scanDate":1697181243274,"drawDate":1697188481320,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=436174","name":"プリオール","scanDate":1697181243298,"drawDate":1697188511632,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438814","name":"ディオール","scanDate":1697181243320,"drawDate":1697188544372,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433734","name":"media luxe","scanDate":1697181243340,"drawDate":1697188577354,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432823","name":"ニベア","scanDate":1697181243359,"drawDate":1697200897905,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432906","name":"コラージュ","scanDate":1697181243377,"drawDate":1697200925090,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=429539","name":"デルモンテ","scanDate":1697181243395,"drawDate":1697200948672,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433947","name":"イニスフリー","scanDate":1697181243414,"drawDate":1697200973304,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435315","name":"ロリエ","scanDate":1697181243435,"drawDate":1697200996533,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435160","name":"SOFINA iP","scanDate":1697181243454,"drawDate":1697201025702,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432389","name":"クレ?ド?ポー ボーテ","scanDate":1697181243474,"drawDate":1697201051009,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433049","name":"espoir","scanDate":1697181243495,"drawDate":1697201076537,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=428858","name":"&honey（アンドハニー）","scanDate":1697181243524,"drawDate":1697201100734,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431891","name":"suisai","scanDate":1697181243548,"drawDate":1697201126460,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=423692","name":"SHISEIDO","scanDate":1697181243569,"drawDate":1697201154398,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431976","name":"アテニア","scanDate":1697181243587,"drawDate":1697201181944,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437865","name":"デジャヴュ","scanDate":1697181243604,"drawDate":1697201207318,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=430410","name":"d プログラム","scanDate":1697181243623,"drawDate":1697201234734,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431936","name":"魔女工場","scanDate":1697181243645,"drawDate":1697201265305,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432593","name":"インウイ","scanDate":1697181243664,"drawDate":1697201393939,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=419930","name":"エリクシール","scanDate":1697181243681,"drawDate":1697201418693,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=432323","name":"ナチュリエ","scanDate":1697181243698,"drawDate":1697201442678,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=429197","name":"アテニア","scanDate":1697181243715,"drawDate":1697201473338,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=418384","name":"エリクシール","scanDate":1697181243734,"drawDate":1697201503541,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431435","name":"BLOOMIO","scanDate":1697181243752,"drawDate":1697201529999,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435638","name":"ドモホルンリンクル","scanDate":1697181243770,"drawDate":1697201553963,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438056","name":"ALBLANC(アルブラン)","scanDate":1697181243791,"drawDate":1697201579707,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/120309/top","name":"【10枚セット】しっとり保湿マスクパック / APLIN\n計20名様現品\n美容液の染み込んだ柔らかいシートでピタっと密着\n応募する","scanDate":1697181245120,"drawDate":1697201611617,"drew":true}
