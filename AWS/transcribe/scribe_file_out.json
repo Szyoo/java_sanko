@@ -1,0 +1,122 @@
+{
+    "jobName": "71da9719-5f09-11ed-99c1-802bf98abdc6",
+    "accountId": "552947388436",
+    "results": {
+        "transcripts": [
+            {
+                "transcript": "Please tell me the way to the nearest station."
+            }
+        ],
+        "items": [
+            {
+                "start_time": "0.0",
+                "end_time": "0.35",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "Please"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "0.35",
+                "end_time": "0.57",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "tell"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "0.57",
+                "end_time": "0.7",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "me"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "0.7",
+                "end_time": "0.81",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "the"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "0.81",
+                "end_time": "1.0",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "way"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "1.0",
+                "end_time": "1.16",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "to"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "1.16",
+                "end_time": "1.27",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "the"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "1.27",
+                "end_time": "1.67",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "nearest"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "start_time": "1.67",
+                "end_time": "2.3",
+                "alternatives": [
+                    {
+                        "confidence": "1.0",
+                        "content": "station"
+                    }
+                ],
+                "type": "pronunciation"
+            },
+            {
+                "alternatives": [
+                    {
+                        "confidence": "0.0",
+                        "content": "."
+                    }
+                ],
+                "type": "punctuation"
+            }
+        ]
+    },
+    "status": "COMPLETED"
+}
