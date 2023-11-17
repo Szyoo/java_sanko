@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
     /**
@@ -15,29 +16,32 @@ public class Driver {
      * @return WebDriver
      */
 
-    public static WebDriver driver = Driver.setDriverChrome();
+    public static WebDriver driver = setDriverChrome();
     // WebDriver driver = Driver.setDriverEdge();
     // WebDriver driver = Driver.setDriverFirefox();
 
     public static WebDriver setDriverChrome() {
         // try {
-            System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        // System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
 
-            ChromeOptions options = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
 
-            // 小雅电脑配置
-            // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User Data");
-            // options.addArguments("--profile-directory=Profile 6");
+        // 小雅电脑配置
+        // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
+        // Data");
+        // options.addArguments("--profile-directory=Profile 6");
 
-            // 远程桌面配置
-            // options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User Data");
-            // options.addArguments("--profile-directory=Default");
-            // options.addArguments("--no-sandbox");
+        // 远程桌面配置
+        // options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User
+        // Data");
+        // options.addArguments("--profile-directory=Default");
+        // options.addArguments("--no-sandbox");
 
-            return new ChromeDriver(options);
+        return new ChromeDriver(options);
         // } catch (Exception e) {
-        //     System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
-        //     System.exit(0);
+        // System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
+        // System.exit(0);
         // }
         // return null;
     }
@@ -61,10 +65,11 @@ public class Driver {
     public static WebDriver setDriverFirefox() {
         try {
             System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-            System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-            System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
+            System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+            System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
             // FirefoxDriver fd = new FirefoxDriver();
-            // System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
+            // System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,
+            // "false");
             return new FirefoxDriver();
         } catch (Exception e) {
             System.out.println("驱动加载失败，请关闭当前所有已开启的Edge浏览器后重新运行程序");

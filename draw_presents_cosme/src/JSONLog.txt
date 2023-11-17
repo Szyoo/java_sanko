@@ -1948,3 +1948,64 @@
 {"link":"https://as.iy.impact-ad.jp/ct?id=435638","name":"ドモホルンリンクル","scanDate":1697181243770,"drawDate":1697201553963,"drew":true}
 {"link":"https://as.iy.impact-ad.jp/ct?id=438056","name":"ALBLANC(アルブラン)","scanDate":1697181243791,"drawDate":1697201579707,"drew":true}
 {"link":"https://www.cosme.net/brand/brand_id/120309/top","name":"【10枚セット】しっとり保湿マスクパック / APLIN\n計20名様現品\n美容液の染み込んだ柔らかいシートでピタっと密着\n応募する","scanDate":1697181245120,"drawDate":1697201611617,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19199","name":"スキンオーラジェニック","scanDate":1698880556040,"drawDate":1698880576984,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19196","name":"SUQQU ザ ファンデーション","scanDate":1698880556062,"drawDate":1698880589096,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19200","name":"ホリデーアディクション ブラッシュ パレット “ アンノウン ファミリア”","scanDate":1698880556082,"drawDate":1698880599782,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19201","name":"ルミナスHQブースター","scanDate":1698880556103,"drawDate":1698880610174,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438210","name":"パーフェクトワン","scanDate":1698880556121,"drawDate":1698880641338,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438764","name":"クナイプ","scanDate":1698880556141,"drawDate":1698881018243,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438621","name":"DUO(デュオ)","scanDate":1698880556160,"drawDate":1698881048358,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=436224","name":"Perfect Diary","scanDate":1698880556191,"drawDate":1698881075866,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438104","name":"エッセンシャル","scanDate":1698880556221,"drawDate":1698881103122,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434859","name":"コスメデコルテ","scanDate":1698880556240,"drawDate":1698881130130,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434350","name":"ディアボーテ","scanDate":1698880556260,"drawDate":1698881155240,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440308","name":"オペラ","scanDate":1698880556278,"drawDate":1698881183641,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438574","name":"ルルルン","scanDate":1698880556297,"drawDate":1698881212304,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437802","name":"SENKA(センカ)","scanDate":1698880556315,"drawDate":1698881242019,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440583","name":"VT(ブイティー)","scanDate":1698880556334,"drawDate":1698881270134,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437324","name":"【特集】保湿?うるおいコスメ／秋冬の乾燥対策アイテム240名様?","scanDate":1698880556352,"drawDate":1698884793954,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=441306","name":"msh(エム?エス?エイチ)","scanDate":1698880556371,"drawDate":1698884821958,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440553","name":"アパガード","scanDate":1698880556390,"drawDate":1698884847766,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=442189","name":"Panasonic","scanDate":1698880556408,"drawDate":1698884875497,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=436015","name":"SOFINA iP","scanDate":1698880556426,"drawDate":1698884903994,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433090","name":"ディオール","scanDate":1698880556450,"drawDate":1698884936545,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439750","name":"CLAYGE(クレージュ)","scanDate":1698880556469,"drawDate":1698884968770,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434305","name":"エリクシール","scanDate":1698880556486,"drawDate":1698885002051,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440682","name":"CLIO","scanDate":1698880556505,"drawDate":1698885037584,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=441234","name":"トム フォード ビューティ","scanDate":1698880556525,"drawDate":1698885063829,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439243","name":"プリオール","scanDate":1698880556544,"drawDate":1698885098711,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433790","name":"SHISEIDO","scanDate":1698880556564,"drawDate":1698885134094,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438869","name":"ランコム","scanDate":1698880556582,"drawDate":1698885167827,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434078","name":"マキアージュ","scanDate":1698880556601,"drawDate":1698888014938,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439288","name":"KINS","scanDate":1698880556619,"drawDate":1698888041349,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435367","name":"ニベア","scanDate":1698880556641,"drawDate":1698907361411,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434488","name":"アスタリフト","scanDate":1698880556659,"drawDate":1698907389615,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435680","name":"msh(エム?エス?エイチ)","scanDate":1698880556677,"drawDate":1698909009252,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=434909","name":"ベネフィーク","scanDate":1698880556695,"drawDate":1698909039171,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=431138","name":"エリクシール","scanDate":1698880556712,"drawDate":1698909075726,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440054","name":"+tmr","scanDate":1698880556731,"drawDate":1698909101475,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=441423","name":"ロクシタン","scanDate":1698880556750,"drawDate":1698909141170,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438353","name":"イハダ","scanDate":1698880556769,"drawDate":1698909169126,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437084","name":"TUNEMAKERS（チューンメーカーズ）","scanDate":1698880556789,"drawDate":1698909200822,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=433443","name":"ポール ＆ ジョー ボーテ","scanDate":1698880556810,"drawDate":1698909232291,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439156","name":"clayence","scanDate":1698880556828,"drawDate":1698909486968,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=437005","name":"パックスナチュロン","scanDate":1698880556846,"drawDate":1698909513357,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=442547","name":"@cosmeメンバー限定オンライン体験会！ 300名様をご招待?","scanDate":1698880556864,"drawDate":null,"drew":false}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440607","name":"goodal","scanDate":1698880556988,"drawDate":1698909573033,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440473","name":"アルビオン","scanDate":1698880557005,"drawDate":1698909609591,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/2726/top/nt","name":"クナイプ 泡ボディウォッシュ＋炭酸入浴料セット / クナイプ\n計20名様現品\n新発売、泡ボディウォッシュ2種と炭酸入浴料1種\n応募する","scanDate":1698880559031,"drawDate":1698909642642,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/123404/top","name":"デザインリフト / YA-MAN TOKYO JAPAN(ヤーマントウキョウジャパン)\n計20名様現品\n目もとのリフトアップ*1をデザインする美顔器\n応募する","scanDate":1698880559326,"drawDate":1698909677230,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19206","name":"ヘルシアmyリズム デイリーケアタブレット","scanDate":1699606583924,"drawDate":1699606630265,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19204","name":"フランキンセンスウォーター","scanDate":1699606583950,"drawDate":1699606643278,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19202","name":"ピュアクレンジングオイル","scanDate":1699606583972,"drawDate":1699606654302,"drew":true}
+{"link":"https://www.cosme.net/present/detail/present_id/19203","name":"リーゼ ニュアンススタイリングオイル ＋モイスト","scanDate":1699606583994,"drawDate":1699606665511,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440217","name":"ナチュリエ","scanDate":1699606584014,"drawDate":1699606693775,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439797","name":"デジャヴュ","scanDate":1699606584035,"drawDate":1699606781653,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=444149","name":"TIRTIR","scanDate":1699606584067,"drawDate":1699606811014,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=438528","name":"COSRX(コスアールエックス)","scanDate":1699606584089,"drawDate":1699606841686,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=442932","name":"ニベア","scanDate":1699606584110,"drawDate":1699606870821,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439954","name":"dr365","scanDate":1699606584131,"drawDate":1699606898124,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=439337","name":"シエロ","scanDate":1699606584152,"drawDate":1699606949283,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=435411","name":"APLIN","scanDate":1699606584646,"drawDate":1699606977855,"drew":true}
+{"link":"https://as.iy.impact-ad.jp/ct?id=440362","name":"サブリミック","scanDate":1699606584665,"drawDate":1699607004151,"drew":true}
+{"link":"https://www.cosme.net/brand/brand_id/11070/top","name":"洗顔後すぐの新習慣！ヒト幹細胞培養エキス美容原液 / フラコラ\n計10名様現品\nゆらぎや乾燥が気になる季節、話題の成分でお手入れを\n応募する","scanDate":1699606589129,"drawDate":1699607041790,"drew":true}
