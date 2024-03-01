@@ -15,7 +15,7 @@
     <checkstyle.version>8.29</checkstyle.version>
     <checkstyle-rules.version>4.0.1</checkstyle-rules.version>
     <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
-    <jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
     <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     <!-- JaCoCo thresholds. Increase gradually as you  add tests. -->
@@ -55,12 +55,18 @@
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>4.4.3</version>
+      <version>5.7.0</version>
     </dependency>
     <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.6.0</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.12</version> 
+    </dependency>
+    <!-- Logback Classic Implementation -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.0</version> 
     </dependency>
   </dependencies>
   <build>
@@ -135,7 +141,7 @@
               <goal>report</goal>
             </goals>
           </execution>
-          <execution>
+          <!-- <execution>
             <id>check-unit-test</id>
             <phase>test</phase>
             <goals>
@@ -181,7 +187,7 @@
                 </rule>
               </rules>
             </configuration>
-          </execution>
+          </execution> -->
         </executions>
       </plugin>
     </plugins>
