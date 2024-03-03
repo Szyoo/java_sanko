@@ -1,12 +1,16 @@
 package com.szyoo;
 
+import java.awt.*;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
@@ -17,66 +21,36 @@ public class Driver {
      */
 
     public static WebDriver driver = setDriverChrome();
-    // WebDriver driver = Driver.setDriverEdge();
-    // WebDriver driver = Driver.setDriverFirefox();
+    // WebDriver driver = setDriverEdge();
+    // WebDriver driver = setDriverFirefox();
 
     public static WebDriver setDriverChrome() {
-        // try {
-        // System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         WebDriverManager.chromedriver().setup();
-        // WebDriverManager.chromedriver().clearDriverCache().setup();
-
         ChromeOptions options = new ChromeOptions();
-
-        // 小雅电脑配置
-        // options.addArguments("--user-data-dir=C:\\Users/student/AppData/Local/Google/Chrome/User
-        // Data");
-        // options.addArguments("--profile-directory=Profile 6");
-
-        // 远程桌面配置
-        // options.addArguments("--user-data-dir=C:\\Users/losin/AppData/Local/Google/Chrome/User
-        // Data");
-        // options.addArguments("--profile-directory=Default");
-        // options.addArguments("--no-sandbox");
-
+        Dimension halfScreenSize = getHalfScreenSize();
+        // 使用获取的屏幕尺寸设置浏览器窗口大小和位置
+        options.addArguments("window-size=" + halfScreenSize.width + "," + halfScreenSize.height);
+        options.addArguments("window-position=0,0");
         return new ChromeDriver(options);
-        // } catch (Exception e) {
-        // System.out.println("驱动加载失败，请关闭当前所有已开启的Chrome浏览器后重新运行程序");
-        // System.exit(0);
-        // }
-        // return null;
     }
 
-    /**
-     * 设置Driver路径，并启动Edge
-     * 
-     * @return WebDriver
-     */
     public static WebDriver setDriverEdge() {
-        try {
-            System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
-            return new EdgeDriver();
-        } catch (Exception e) {
-            System.out.println("驱动加载失败，请关闭当前所有已开启的Edge浏览器后重新运行程序");
-            System.exit(0);
-        }
-        return null;
+        WebDriverManager.edgedriver().setup();
+        EdgeOptions options = new EdgeOptions();
+        return new EdgeDriver(options);
     }
 
     public static WebDriver setDriverFirefox() {
-        try {
-            System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-            System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-            System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
-            // FirefoxDriver fd = new FirefoxDriver();
-            // System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,
-            // "false");
-            return new FirefoxDriver();
-        } catch (Exception e) {
-            System.out.println("驱动加载失败，请关闭当前所有已开启的Edge浏览器后重新运行程序");
-            System.exit(0);
-        }
-        return null;
+        WebDriverManager.firefoxdriver().setup();
+        FirefoxOptions options = new FirefoxOptions();
+        return new FirefoxDriver(options);
+    }
+
+    private static Dimension getHalfScreenSize() {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int halfWidth = screenSize.width / 2;
+        int fullHeight = screenSize.height;
+        return new Dimension(halfWidth, fullHeight);
     }
 
     /**
@@ -113,11 +87,5 @@ public class Driver {
                 driver.switchTo().window(window);
             }
         }
-        // String handle = driver.getWindowHandle();
-        // Set<String> winHandels = driver.getWindowHandles(); // 得到当前窗口的set集合
-        // List<String> it = new ArrayList<String>(winHandels); // 将set集合存入list对象
-        // if (it.size() > 1 && (!it.get(1).equals(handle))) {
-        // driver.switchTo().window(it.get(1)); // 切换到弹出的新窗口
-        // }
     }
 }
